@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.group12_bksp.Mariyum.HRManagerDashboard">
+   <children>
+      <Button layoutX="82.0" layoutY="86.0" mnemonicParsing="false" onAction="#ManageAthleteStaffRecordOnActionButton" prefHeight="26.0" prefWidth="189.0" text="Manage Athlete &amp; Staff Record" textFill="#569c67" />
+      <Button layoutX="354.0" layoutY="137.0" mnemonicParsing="false" onAction="#EvaluatePerformanceReportOnActionButton" prefHeight="26.0" prefWidth="190.0" text="Evaluate Performance Report" textFill="#519c56" />
+      <Button layoutX="80.0" layoutY="187.0" mnemonicParsing="false" onAction="#RecruitNewStafforTrainerOnActionButton" prefHeight="26.0" prefWidth="222.0" text="Recruit New Staff or Trainer" textFill="#519c56" />
+      <Button layoutX="358.0" layoutY="187.0" mnemonicParsing="false" onAction="#GenerateHRReportOnActionButton" prefHeight="26.0" prefWidth="176.0" text="Generate HR Report" textFill="#519c56" />
+      <Button layoutX="354.0" layoutY="86.0" mnemonicParsing="false" onAction="#NotifyEmployeeOnActionButton" prefHeight="26.0" prefWidth="190.0" text="Notify Employee" textFill="#519c56" />
+      <Button layoutX="79.0" layoutY="137.0" mnemonicParsing="false" onAction="#TrackAttendanceOnActionButton" prefHeight="26.0" prefWidth="166.0" text="Track Attendance" textFill="#519c56" />
+      <Button layoutX="82.0" layoutY="245.0" mnemonicParsing="false" onAction="#ScheduleTrainingSessionOnActionButton" prefHeight="26.0" prefWidth="190.0" text="Schedule Training Session" textFill="#519c56" />
+      <Button layoutX="342.0" layoutY="245.0" mnemonicParsing="false" onAction="#ManageHealthFitnessRecordOnActionButton" prefHeight="26.0" prefWidth="190.0" text="Manage Health &amp; Fitness Record" textFill="#519c56" />
+      <Label layoutX="163.0" layoutY="20.0" prefHeight="27.0" prefWidth="262.0" style="-fx-font-size: 18px; -fx-font-weight: bold;" text="HRManager Dashboard" textFill="#519c56" />
+      <Button layoutX="516.0" layoutY="354.0" mnemonicParsing="false" onAction="#LogOutOnActionButton" text="LogOut" textFill="#519c56" />
+   </children>
+</AnchorPane>
