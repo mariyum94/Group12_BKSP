@@ -19,8 +19,7 @@ public class LoginController {
     private Label errorLabel;
     @javafx.fxml.FXML
     private TextField usernameTextField;
-    @FXML
-    //Mariyum
+    //mariyum
     private final String FinanceOfficerID = "FinanceOfficer";
     private final String FinanceOfficerpassword = "1234";
     private final String HRManagerID = "HRManager";
@@ -44,19 +43,19 @@ public class LoginController {
 
 //others user password
 
-    @Deprecated
+    @FXML
     public void LoginOnActionButton(ActionEvent actionEvent) throws IOException {
         String username = usernameTextField.getText().trim();
         String password = passwordTextField.getText().trim();
 // mariyum
         if (username.equals(FinanceOfficerID) && password.equals(FinanceOfficerpassword)) {
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("/com/example/bksp/Mariyum/FinanceOfficerDashboard.fxml"));
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("/com/example/group12_bksp/Mariyum/FinanceOfficerDashboard.fxml"));
             Parent root = loader.load();
             Stage stage = (Stage) usernameTextField.getScene().getWindow();
             stage.setScene(new Scene(root));
             stage.show();
         } else if (username.equals(HRManagerID) && password.equals(HRManagerpassword)) {
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("/com/example/bksp/Mariyum/HRManagerDashboard.fxml"));
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("/com/example/group12_bksp/Mariyum/HRManagerDashboard.fxml"));
             Parent root = loader.load();
             Stage stage = (Stage) usernameTextField.getScene().getWindow();
             stage.setScene(new Scene(root));
@@ -64,13 +63,13 @@ public class LoginController {
 
             //mansura
         }   else if (username.equals(EventCoordinatorID) && password.equals(EventCoordinatorpassword)) {
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("/com/example/bksp/Mansura/EventCdashbord.fxml"));
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("/com/example/group12_bksp/Mansura/EventCdashbord.fxml"));
             Parent root = loader.load();
             Stage stage = (Stage) usernameTextField.getScene().getWindow();
             stage.setScene(new Scene(root));
             stage.show();
         }else if (username.equals(CricketTraineeID) && password.equals(CricketTraineepassword)) {
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("/com/example/bksp/Mansura/CTraineedashboard.fxml"));
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("/com/example/group12_bksp/Mansura/CTraineedashboard.fxml"));
             Parent root = loader.load();
             Stage stage = (Stage) usernameTextField.getScene().getWindow();
             stage.setScene(new Scene(root));
@@ -78,26 +77,26 @@ public class LoginController {
 
             //ROMTAHENA
         }else if (username.equals(DirectorGeneralID) && password.equals(DirectorGeneralpassword)) {
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("/com/example/bksp/ROMTAHENA/DirectorGdashboard.fxml"));
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("/com/example/group12_bksp/ROMTAHENA/DirectorGdashboard.fxml"));
             Parent root = loader.load();
             Stage stage = (Stage) usernameTextField.getScene().getWindow();
             stage.setScene(new Scene(root));
             stage.show();
         }else if (username.equals(CricketCoachID) && password.equals(CricketCoachpassword)) {
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("/com/example/bksp/ROMTAHENA/CricketCoachDashboard.fxml"));
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("/com/example/group12_bksp/ROMTAHENA/CricketCoachDashboard.fxml"));
             Parent root = loader.load();
             Stage stage = (Stage) usernameTextField.getScene().getWindow();
             stage.setScene(new Scene(root));
             stage.show();
             //Samayra
         }else if (username.equals(SwimmingTraineeID) && password.equals(SwimmingTraineepassword)) {
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("/com/example/bksp/Samayra/SwimmingTraineeDashboard.fxml"));
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("/com/example/group12_bksp/Samayra/SwimmingTraineeDashboard.fxml"));
             Parent root = loader.load();
             Stage stage = (Stage) usernameTextField.getScene().getWindow();
             stage.setScene(new Scene(root));
             stage.show();
         }else if (username.equals(PhysiotherapistID) && password.equals(Physiotherapistpassword)) {
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("/com/example/bksp/Samayra/PhysiotherapistDashboard.fxml"));
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("/com/example/group12_bksp/Samayra/PhysiotherapistDashboard.fxml"));
             Parent root = loader.load();
             Stage stage = (Stage) usernameTextField.getScene().getWindow();
             stage.setScene(new Scene(root));
