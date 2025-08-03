@@ -1,14 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="com.example.group12_bksp.ROMTAHENA.CricketCoachDashboardController"
-            prefHeight="400.0" prefWidth="600.0">
 
+<AnchorPane prefHeight="400.0" prefWidth="570.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.group12_bksp.ROMTAHENA.CricketCoachDashboardController">
+   <children>
+      <Button layoutX="80.0" layoutY="102.0" mnemonicParsing="false" onAction="#addPlayerButton" text="Add Player Profile" />
+      <Button layoutX="80.0" layoutY="149.0" mnemonicParsing="false" onAction="#updateScheduleButton" text="Update Traninig Schedule" />
+      <Button layoutX="80.0" layoutY="200.0" mnemonicParsing="false" onAction="#viewPlayerButton" text="View Player Stats" />
+      <Button layoutX="80.0" layoutY="251.0" mnemonicParsing="false" onAction="#manageProfileButton" text="Manage Practice Drills" />
+      <Button layoutX="333.0" layoutY="103.0" mnemonicParsing="false" onAction="#evaluteFintnessButton" text="Evaluate Player Fitness" />
+      <Button layoutX="333.0" layoutY="150.0" mnemonicParsing="false" onAction="#communicatewithTraineeButton" text="Communicate with Trainees" />
+      <Button layoutX="332.0" layoutY="201.0" mnemonicParsing="false" onAction="#trackTeamAttendanceButton" text="Track Team Attendance" />
+      <Button layoutX="333.0" layoutY="252.0" mnemonicParsing="false" onAction="#feedbackButton" text="Submit Training Feedback" />
+      <Label layoutX="166.0" layoutY="47.0" text="Cricket Coach DashBoard" textFill="#0f75b9">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Label>
+   </children>
 </AnchorPane>
