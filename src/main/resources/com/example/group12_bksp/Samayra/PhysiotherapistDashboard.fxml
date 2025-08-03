@@ -1,14 +1,57 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="com.example.group12_bksp.Samayra.PhysiotherapistDashboard"
-            prefHeight="400.0" prefWidth="600.0">
-
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.group12_bksp.Samayra.PhysiotherapistDashboard">
+   <children>
+      <Label layoutX="136.0" layoutY="23.0" text="Physiotherapist Dashboard" textFill="#b177ac">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Button layoutX="62.0" layoutY="155.0" mnemonicParsing="false" onAction="#TherapyPlanOnActionButton" text="Therapy Plan" textFill="#a13aae">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Button layoutX="63.0" layoutY="209.0" mnemonicParsing="false" onAction="#RecoveryProgressOnActionButton" prefHeight="36.0" prefWidth="146.0" text="Recovery Progress" textFill="#b350b7">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Button layoutX="63.0" layoutY="96.0" mnemonicParsing="false" onAction="#AssessInjuryOnActionButton" text="Assess Injury" textFill="#9e5ca6">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Button layoutX="364.0" layoutY="211.0" mnemonicParsing="false" onAction="#MessageTeamOnActionButton" text="Message Team" textFill="#9e5ca6">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Button layoutX="362.0" layoutY="155.0" mnemonicParsing="false" onAction="#ScheduleFollowupOnActionButton" text="Schedule Follow-Up" textFill="#9e5ca6">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Button layoutX="361.0" layoutY="101.0" mnemonicParsing="false" onAction="#RehabilitationReportOnActionButton" text="Rehabilitation Report" textFill="#9e5ca6">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Button layoutX="362.0" layoutY="270.0" mnemonicParsing="false" onAction="#InjuryDatabaseOnActionButton" text="Injury Database" textFill="#9e5ca6">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Button layoutX="63.0" layoutY="270.0" mnemonicParsing="false" onAction="#ExerciseRoutineOnActionButton" text="Exercise Routine" textFill="#9e5ca6">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Button layoutX="497.0" layoutY="350.0" mnemonicParsing="false" onAction="#LogOutOnActionButton" text="Log Out" textFill="#805c8c" />
+   </children>
 </AnchorPane>
