@@ -27,6 +27,7 @@ public class FinanceOfficer3
     private Label messageLabel;
     @javafx.fxml.FXML
     private TextArea textArea;
+    public static final String filename = "FinanceOfficer3.txt";
 
     @javafx.fxml.FXML
     public void initialize() {
