@@ -9,23 +9,31 @@ import javafx.scene.control.TextField;
 
 import java.io.IOException;
 
-public class FinanceOfficer2
+public class FinanceOfficer7
 {
     @javafx.fxml.FXML
-    private TableColumn salaryCol;
+    private TextField SponsorNameField;
     @javafx.fxml.FXML
-    private TableColumn nameCol;
+    private TableView sponsorshipTable;
     @javafx.fxml.FXML
-    private TextField SalaryField;
+    private TableColumn nameColumn;
     @javafx.fxml.FXML
-    private Label reportLabel;
+    private TableColumn amountColumn;
     @javafx.fxml.FXML
-    private TableView salaryTable;
+    private TableColumn purposeColumn;
     @javafx.fxml.FXML
-    private TextField employenameField;
+    private TextField PurposeField;
+    @javafx.fxml.FXML
+    private Label messageLabel;
+    @javafx.fxml.FXML
+    private TextField amountField;
 
     @javafx.fxml.FXML
     public void initialize() {
+    }
+
+    @javafx.fxml.FXML
+    public void editButton(ActionEvent actionEvent) {
     }
 
     @javafx.fxml.FXML
@@ -35,6 +43,10 @@ public class FinanceOfficer2
     }
 
     @javafx.fxml.FXML
-    public void paySalaryButton(ActionEvent actionEvent) {
+    public void addButton(ActionEvent actionEvent) {
+    }
+
+    @javafx.fxml.FXML
+    public void monitorButton(ActionEvent actionEvent) {
     }
 }

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.group12_bksp.Mansura.EventC8">
+   <children>
+      <Label layoutX="192.0" layoutY="31.0" prefHeight="40.0" prefWidth="252.0" text="Event Feedback" textFill="#dc0c0c">
+         <font>
+            <Font name="Arial Bold" size="27.0" />
+         </font>
+      </Label>
+      <TableView fx:id="feedbackTable" layoutX="14.0" layoutY="100.0" prefHeight="200.0" prefWidth="578.0">
+        <columns>
+          <TableColumn fx:id="feedbackIdColumn" prefWidth="188.79998779296875" text="ID" />
+          <TableColumn fx:id="authorColumn" prefWidth="173.60003662109375" text="Author" />
+            <TableColumn fx:id="contentColumn" prefWidth="216.0" text="Feedback Message" />
+        </columns>
+      </TableView>
+      <Label fx:id="statusLabel" layoutX="193.0" layoutY="344.0" prefHeight="40.0" prefWidth="134.0" />
+   </children>
+</AnchorPane>

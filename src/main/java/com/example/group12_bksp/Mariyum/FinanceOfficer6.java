@@ -9,20 +9,20 @@ import javafx.scene.control.TextField;
 
 import java.io.IOException;
 
-public class FinanceOfficer2
+public class FinanceOfficer6
 {
     @javafx.fxml.FXML
-    private TableColumn salaryCol;
+    private TableColumn budgetColumn;
     @javafx.fxml.FXML
-    private TableColumn nameCol;
+    private TextField DepartmentField;
     @javafx.fxml.FXML
-    private TextField SalaryField;
+    private TableColumn departmentColumn;
     @javafx.fxml.FXML
-    private Label reportLabel;
+    private TextField BudgetField;
     @javafx.fxml.FXML
-    private TableView salaryTable;
+    private Label msglabel;
     @javafx.fxml.FXML
-    private TextField employenameField;
+    private TableView budgetTable;
 
     @javafx.fxml.FXML
     public void initialize() {
@@ -31,10 +31,13 @@ public class FinanceOfficer2
     @javafx.fxml.FXML
     public void returnToDashboardButton(ActionEvent actionEvent) throws IOException {
         SceneSwitcher.switchTo("FinanceOfficerDashboard.fxml", actionEvent);
-
     }
 
     @javafx.fxml.FXML
-    public void paySalaryButton(ActionEvent actionEvent) {
+    public void updateButton(ActionEvent actionEvent) {
+    }
+
+    @javafx.fxml.FXML
+    public void allocateButton(ActionEvent actionEvent) {
     }
 }
