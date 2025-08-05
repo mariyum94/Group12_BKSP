@@ -22,10 +22,8 @@ public class CricketCoach1 {
     public void initialize() {
     }
 
-
     @FXML
     public void submitButton(ActionEvent event) {
-
     }
 
     @FXML

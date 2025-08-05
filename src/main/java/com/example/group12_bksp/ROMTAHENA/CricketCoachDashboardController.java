@@ -14,11 +14,12 @@ public class CricketCoachDashboardController
     }
 
     @javafx.fxml.FXML
-    public void EvaluteFitnessButton(ActionEvent actionEvent) {
+    public void UpdateScheduleButton(ActionEvent actionEvent) throws IOException {
+        SceneSwitcher.switchTo("/com/example/group12_bksp/ROMTAHENA/CricketCoach2.fxml", actionEvent);
     }
 
     @javafx.fxml.FXML
-    public void UpdateScheduleButton(ActionEvent actionEvent) {
+    public void EvaluteFitnessButton(ActionEvent actionEvent) {
     }
 
     @javafx.fxml.FXML
