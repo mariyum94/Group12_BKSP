@@ -1,6 +1,9 @@
 package com.example.group12_bksp.Mariyum;
 
+import com.example.group12_bksp.SceneSwitcher;
 import javafx.event.ActionEvent;
+
+import java.io.IOException;
 
 public class FinanceOfficerDashboard {
     @javafx.fxml.FXML
@@ -36,6 +39,7 @@ public class FinanceOfficerDashboard {
     }
 
     @javafx.fxml.FXML
-    public void AuditFinancialRecordOnActionButton(ActionEvent actionEvent) {
+    public void AuditFinancialRecordOnActionButton(ActionEvent actionEvent) throws IOException {
+        SceneSwitcher.switchTo("/com/example/bksp/Mariyum/FinanceOfficer8.fxml", actionEvent);
     }
 }
