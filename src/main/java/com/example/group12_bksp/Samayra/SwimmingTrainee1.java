@@ -1,8 +1,11 @@
 package com.example.group12_bksp.Samayra;
 
+import com.example.group12_bksp.SceneSwitcher;
 import javafx.event.ActionEvent;
 import javafx.scene.control.ComboBox;
 import javafx.scene.control.TextField;
+
+import java.io.IOException;
 
 public class SwimmingTrainee1
 {
@@ -22,6 +25,8 @@ public class SwimmingTrainee1
     }
 
     @javafx.fxml.FXML
-    public void ReturnHomeOnAction(ActionEvent actionEvent) {
+    public void ReturnHomeOnAction(ActionEvent actionEvent) throws IOException {
+        SceneSwitcher.switchTo("/com/example/group12_bksp/Samayra/SwimmingTraineeDashboard.fxml", actionEvent);
+
     }
 }

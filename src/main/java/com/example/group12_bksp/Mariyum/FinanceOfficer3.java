@@ -1,5 +1,6 @@
 package com.example.group12_bksp.Mariyum;
 
+import com.example.group12_bksp.SceneSwitcher;
 import javafx.event.ActionEvent;
 import javafx.scene.control.*;
 
@@ -49,7 +50,9 @@ public class FinanceOfficer3
     }
 
     @javafx.fxml.FXML
-    public void returnToDashboardButton(ActionEvent actionEvent) {
+    public void returnToDashboardButton(ActionEvent actionEvent) throws IOException {
+        SceneSwitcher.switchTo("FinanceOfficerDashboard.fxml", actionEvent);
+
     }
 
     @javafx.fxml.FXML

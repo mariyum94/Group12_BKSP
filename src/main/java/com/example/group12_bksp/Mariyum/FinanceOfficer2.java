@@ -1,10 +1,13 @@
 package com.example.group12_bksp.Mariyum;
 
+import com.example.group12_bksp.SceneSwitcher;
 import javafx.event.ActionEvent;
 import javafx.scene.control.Label;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
+
+import java.io.IOException;
 
 public class FinanceOfficer2
 {
@@ -26,7 +29,9 @@ public class FinanceOfficer2
     }
 
     @javafx.fxml.FXML
-    public void returnToDashboardButton(ActionEvent actionEvent) {
+    public void returnToDashboardButton(ActionEvent actionEvent) throws IOException {
+        SceneSwitcher.switchTo("FinanceOfficerDashboard.fxml", actionEvent);
+
     }
 
     @javafx.fxml.FXML
