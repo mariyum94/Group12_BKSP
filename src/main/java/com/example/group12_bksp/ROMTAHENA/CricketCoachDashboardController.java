@@ -1,42 +1,49 @@
 package com.example.group12_bksp.ROMTAHENA;
 
+import com.example.group12_bksp.SceneSwitcher;
 import javafx.event.ActionEvent;
+
+import java.io.IOException;
 
 public class CricketCoachDashboardController
 {
+
     @javafx.fxml.FXML
-    public void initialize() {
+    public void AddPlayerButton(ActionEvent actionEvent) throws IOException {
+        SceneSwitcher.switchTo("/com/example/group12_bksp/ROMTAHENA/CricketCoach1.fxml", actionEvent);
     }
 
     @javafx.fxml.FXML
-    public void addPlayerButton(ActionEvent actionEvent) {
+    public void EvaluteFitnessButton(ActionEvent actionEvent) {
     }
 
     @javafx.fxml.FXML
-    public void manageProfileButton(ActionEvent actionEvent) {
+    public void UpdateScheduleButton(ActionEvent actionEvent) {
     }
 
     @javafx.fxml.FXML
-    public void updateScheduleButton(ActionEvent actionEvent) {
+    public void CommunicateWithTraineeButton(ActionEvent actionEvent) {
     }
 
     @javafx.fxml.FXML
-    public void trackTeamAttendanceButton(ActionEvent actionEvent) {
+    public void ViewPlayerButton(ActionEvent actionEvent) {
     }
 
     @javafx.fxml.FXML
-    public void evaluteFintnessButton(ActionEvent actionEvent) {
+    public void TrackTeamAttendanceButton(ActionEvent actionEvent) {
     }
 
     @javafx.fxml.FXML
-    public void feedbackButton(ActionEvent actionEvent) {
+    public void ManageProfileButton(ActionEvent actionEvent) {
     }
 
     @javafx.fxml.FXML
-    public void viewPlayerButton(ActionEvent actionEvent) {
+    public void SubmitFeedbackButton(ActionEvent actionEvent) {
     }
 
     @javafx.fxml.FXML
-    public void communicatewithTraineeButton(ActionEvent actionEvent) {
+    public void LogOutButton(ActionEvent actionEvent) throws IOException {
+        SceneSwitcher.switchTo("/com/example/group12_bksp/Login.fxml", actionEvent);
     }
+
 }

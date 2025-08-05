@@ -1,8 +1,11 @@
 package com.example.group12_bksp.ROMTAHENA;
 
+import com.example.group12_bksp.SceneSwitcher;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.scene.control.TextField;
+import javafx.scene.control.*;
+
+import java.io.IOException;
 
 public class CricketCoach1 {
 
@@ -26,8 +29,8 @@ public class CricketCoach1 {
     }
 
     @FXML
-    public void returnHomeButton(ActionEvent event) {
-
+    public void returnHomeButton(ActionEvent actionEvent) throws IOException {
+        SceneSwitcher.switchTo("/com/example/group12_bksp/ROMTAHENA/CricketCoachDashboard.fxml", actionEvent);
     }
 
 }
