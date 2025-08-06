@@ -51,7 +51,7 @@ public class FinanceOfficer3
 
     @javafx.fxml.FXML
     public void returnToDashboardButton(ActionEvent actionEvent) throws IOException {
-        SceneSwitcher.switchTo("FinanceOfficerDashboard.fxml", actionEvent);
+        SceneSwitcher.switchTo("/com/example/group12_bksp/Mariyum/FinanceOfficerDashboard.fxml", actionEvent);
 
     }
 

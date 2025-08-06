@@ -23,7 +23,7 @@ public class HRManagerDashboard
 
     @javafx.fxml.FXML
     public void RecruitNewStafforTrainerOnActionButton(ActionEvent actionEvent) throws IOException {
-        SceneSwitcher.switchTo("/com/example/group12_bksp/Mariyum/HRManager1.fxml", actionEvent);
+        SceneSwitcher.switchTo("/com/example/group12_bksp/Mariyum/HRManager3.fxml", actionEvent);
     }
 
     @javafx.fxml.FXML
@@ -33,7 +33,7 @@ public class HRManagerDashboard
 
     @javafx.fxml.FXML
     public void TrackAttendanceOnActionButton(ActionEvent actionEvent) throws IOException {
-        SceneSwitcher.switchTo("/com/example/group12_bksp/Mariyum/HRManager1.fxml", actionEvent);
+        SceneSwitcher.switchTo("/com/example/group12_bksp/Mariyum/HRManager2.fxml", actionEvent);
     }
 
     @javafx.fxml.FXML
