@@ -1,14 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="com.example.group12_bksp.Mariyum.HRManager4"
-            prefHeight="400.0" prefWidth="600.0">
-
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.group12_bksp.Mariyum.HRManager4">
+   <children>
+      <Label layoutX="185.0" layoutY="45.0" style="-fx-font-size: 18px; -fx-font-weight: bold;" text="Schedule Training Session" textFill="#2473ea" />
+      <Label layoutX="40.0" layoutY="129.0" text="Sport:" />
+      <ComboBox fx:id="sportComboBox" layoutX="110.0" layoutY="124.0" prefWidth="150" style="-fx-background-color: #25afe8;" />
+      <Label layoutX="40.0" layoutY="169.0" text="Coach:" />
+      <ComboBox fx:id="coachComboBox" layoutX="110.0" layoutY="164.0" prefWidth="150" style="-fx-background-color: #25afe8;" />
+      <Label layoutX="40.0" layoutY="209.0" text="Date:" />
+      <Button layoutX="66.0" layoutY="267.0" onAction="#addScheduleButton" prefWidth="150" text="Add to Schedule" textFill="#2473ea" />
+      <TableView fx:id="scheduleTableView" layoutX="285.0" layoutY="169.0" prefHeight="122.0" prefWidth="290">
+         <columns>
+            <TableColumn fx:id="sportColumn" prefWidth="90" text="Sport" />
+            <TableColumn fx:id="coachColumn" prefWidth="100" text="Coach" />
+            <TableColumn fx:id="dateColumn" prefWidth="100" text="Date" />
+         </columns>
+      </TableView>
+      <DatePicker fx:id="datePicker" layoutX="115.0" layoutY="204.0" prefHeight="26.0" prefWidth="150.0" style="-fx-background-color: #2473ea;" />
+      <Button layoutX="471.0" layoutY="333.0" onAction="#returnToDashboardButton" text="Return Home" textFill="#25afe8" />
+      <Label fx:id="messageLabel" layoutX="140.0" layoutY="336.0" prefHeight="18.0" prefWidth="250.0" textFill="#00ff32" />
+   </children>
 </AnchorPane>
