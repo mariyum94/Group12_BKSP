@@ -5,21 +5,25 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
 <AnchorPane prefHeight="400.0" prefWidth="570.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.group12_bksp.ROMTAHENA.CricketCoachDashboardController">
    <children>
-      <Button layoutX="80.0" layoutY="102.0" mnemonicParsing="false" onAction="#addPlayerButton" text="Add Player Profile" />
-      <Button layoutX="80.0" layoutY="149.0" mnemonicParsing="false" onAction="#updateScheduleButton" text="Update Traninig Schedule" />
-      <Button layoutX="80.0" layoutY="200.0" mnemonicParsing="false" onAction="#viewPlayerButton" text="View Player Stats" />
-      <Button layoutX="80.0" layoutY="251.0" mnemonicParsing="false" onAction="#manageProfileButton" text="Manage Practice Drills" />
-      <Button layoutX="333.0" layoutY="103.0" mnemonicParsing="false" onAction="#evaluteFintnessButton" text="Evaluate Player Fitness" />
-      <Button layoutX="333.0" layoutY="150.0" mnemonicParsing="false" onAction="#communicatewithTraineeButton" text="Communicate with Trainees" />
-      <Button layoutX="332.0" layoutY="201.0" mnemonicParsing="false" onAction="#trackTeamAttendanceButton" text="Track Team Attendance" />
-      <Button layoutX="333.0" layoutY="252.0" mnemonicParsing="false" onAction="#feedbackButton" text="Submit Training Feedback" />
-      <Label layoutX="166.0" layoutY="47.0" text="Cricket Coach DashBoard" textFill="#0f75b9">
+      <Button layoutX="80.0" layoutY="102.0" mnemonicParsing="false" onAction="#AddPlayerButton" text="Add Player Profile" />
+      <Button layoutX="80.0" layoutY="149.0" mnemonicParsing="false" onAction="#UpdateScheduleButton" text="Update Training Schedule" />
+      <Button layoutX="80.0" layoutY="200.0" mnemonicParsing="false" onAction="#ViewPlayerButton" text="View Player Stats" />
+      <Button layoutX="80.0" layoutY="251.0" mnemonicParsing="false" onAction="#ManageProfileButton" text="Manage Practice Drills" />
+      <Button layoutX="333.0" layoutY="103.0" mnemonicParsing="false" onAction="#EvaluteFitnessButton" text="Evaluate Player Fitness" />
+      <Button layoutX="333.0" layoutY="150.0" mnemonicParsing="false" onAction="#CommunicateWithTraineeButton" text="Communicate with Trainees" />
+      <Button layoutX="332.0" layoutY="201.0" mnemonicParsing="false" onAction="#TrackTeamAttendanceButton" text="Track Team Attendance" />
+      <Button layoutX="333.0" layoutY="252.0" mnemonicParsing="false" onAction="#SubmitFeedbackButton" text="Submit Training Feedback" />
+      <Label layoutX="166.0" layoutY="47.0" text="Cricket Coach DashBoard" textFill="#519c56">
          <font>
             <Font name="System Bold" size="22.0" />
          </font>
       </Label>
+      <Button layoutX="418.0" layoutY="340.0" mnemonicParsing="false" onAction="#LogOutButton" prefHeight="29.0" prefWidth="84.0" text="Log Out" textFill="#519c56">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
    </children>
 </AnchorPane>

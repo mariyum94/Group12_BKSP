@@ -5,6 +5,7 @@ import javafx.event.ActionEvent;
 
 import java.io.IOException;
 
+
 public class FinanceOfficerDashboard {
     @javafx.fxml.FXML
     public void ManageEquipmentPurchaseOnActionButton(ActionEvent actionEvent) throws IOException {
