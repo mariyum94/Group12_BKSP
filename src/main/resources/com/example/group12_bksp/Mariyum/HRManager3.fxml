@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="376.0" prefWidth="624.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.group12_bksp.Mariyum.HRManager3">
+   <children>
+      <Label layoutX="211.0" layoutY="39.0" prefHeight="27.0" prefWidth="251.0" style="-fx-font-size: 18px; -fx-font-weight: bold;" text="Recruit New Staff or Trainer" textFill="#2473ea" />
+      <Label layoutX="325.0" layoutY="117.0" text="Filter by Role:" textFill="#2473ea" />
+      <TableView fx:id="applicationsTable" layoutX="39.0" layoutY="161.0" prefHeight="112.0" prefWidth="297.0">
+         <columns>
+            <TableColumn fx:id="nameColumn" prefWidth="98.39996147155762" text="Name" />
+            <TableColumn fx:id="roleColumn" prefWidth="95.20001983642578" text="Role" />
+            <TableColumn fx:id="statusColumn" prefWidth="101.60003662109375" text="Status" />
+         </columns>
+      </TableView>
+      <Button layoutX="361.0" layoutY="191.0" onAction="#approveButton" prefWidth="100" text="Approve" textFill="#2473ea" />
+      <Button layoutX="482.0" layoutY="191.0" onAction="#rejectButton" prefWidth="100" text="Reject" textFill="#2473ea" />
+      <Button layoutX="488.0" layoutY="299.0" onAction="#returnToDashboardButton" text="Return Home" textFill="#2473ea" />
+      <ComboBox fx:id="RoleCB" layoutX="409.0" layoutY="113.0" prefHeight="26.0" prefWidth="157.0" style="-fx-background-color: #25afe8;" />
+      <Label layoutX="53.0" layoutY="116.0" prefHeight="20.0" prefWidth="87.0" style="-fx-font-size: 14px;" text="Name" textFill="#2473ea" />
+      <TextField fx:id="NameTF" layoutX="147.0" layoutY="113.0" />
+      <Label fx:id="messageLabel" layoutX="140.0" layoutY="315.0" prefHeight="18.0" prefWidth="250.0" textFill="#00ff32" />
+   </children>
+</AnchorPane>

@@ -1,14 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="com.example.group12_bksp.ROMTAHENA.DirectorGdashboardController"
-            prefHeight="400.0" prefWidth="600.0">
-
+<AnchorPane prefHeight="400.0" prefWidth="658.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.group12_bksp.ROMTAHENA.DirectorGdashboardController">
+   <children>
+      <Label layoutX="207.0" layoutY="47.0" text="Director General DashBoard" textFill="#075fb9">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Label>
+      <Button layoutX="102.0" layoutY="101.0" mnemonicParsing="false" onAction="#monitorAthleteProgressButton" text="Monitor Athlete Progress" />
+      <Button layoutX="102.0" layoutY="154.0" mnemonicParsing="false" onAction="#approveFacilityRequestButton" text="Approve Facility Requests" />
+      <Button layoutX="102.0" layoutY="200.0" mnemonicParsing="false" onAction="#assignBudgetButton" text="Assign Budgets to Departments" />
+      <Button layoutX="102.0" layoutY="248.0" mnemonicParsing="false" onAction="#generateReportButton" text=" Generate Performance Reports" />
+      <Button layoutX="396.0" layoutY="101.0" mnemonicParsing="false" onAction="#recruitCoachesButton" text=" Recruit Coaches" />
+      <Button layoutX="396.0" layoutY="154.0" mnemonicParsing="false" onAction="#approveTournamentButton" text="Approve Tournament Participation" />
+      <Button layoutX="396.0" layoutY="200.0" mnemonicParsing="false" onAction="#evaluatePerformanceButton" text=" Evaluate Department Performance" />
+      <Button layoutX="396.0" layoutY="248.0" mnemonicParsing="false" onAction="#communicatewithCoachesButton" text="Communicate with Coaches" />
+   </children>
 </AnchorPane>

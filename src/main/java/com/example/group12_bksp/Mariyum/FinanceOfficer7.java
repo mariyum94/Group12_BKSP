@@ -2,30 +2,29 @@ package com.example.group12_bksp.Mariyum;
 
 import com.example.group12_bksp.SceneSwitcher;
 import javafx.event.ActionEvent;
-import javafx.scene.control.*;
+import javafx.scene.control.Label;
+import javafx.scene.control.TableColumn;
+import javafx.scene.control.TableView;
+import javafx.scene.control.TextField;
 
 import java.io.IOException;
 
-public class FinanceOfficer1
+public class FinanceOfficer7
 {
     @javafx.fxml.FXML
-    private TextField budgetField;
+    private TextField SponsorNameField;
     @javafx.fxml.FXML
-    private TextField categoryField;
+    private TableView sponsorshipTable;
     @javafx.fxml.FXML
-    private TableColumn amountCol;
+    private TableColumn nameColumn;
     @javafx.fxml.FXML
-    private TableColumn dateCol;
+    private TableColumn amountColumn;
     @javafx.fxml.FXML
-    private DatePicker datePicker;
+    private TableColumn purposeColumn;
     @javafx.fxml.FXML
-    private TableView expenseTable;
+    private TextField PurposeField;
     @javafx.fxml.FXML
-    private TableColumn categoryCol;
-    @javafx.fxml.FXML
-    private Label msglabel;
-    @javafx.fxml.FXML
-    private TableColumn Budgetcol;
+    private Label messageLabel;
     @javafx.fxml.FXML
     private TextField amountField;
 
@@ -34,11 +33,7 @@ public class FinanceOfficer1
     }
 
     @javafx.fxml.FXML
-    public void editExpenseButton(ActionEvent actionEvent) {
-    }
-
-    @javafx.fxml.FXML
-    public void deleteExpenseButton(ActionEvent actionEvent) {
+    public void editButton(ActionEvent actionEvent) {
     }
 
     @javafx.fxml.FXML
@@ -48,6 +43,10 @@ public class FinanceOfficer1
     }
 
     @javafx.fxml.FXML
-    public void addExpenseButton(ActionEvent actionEvent) {
+    public void addButton(ActionEvent actionEvent) {
+    }
+
+    @javafx.fxml.FXML
+    public void monitorButton(ActionEvent actionEvent) {
     }
 }

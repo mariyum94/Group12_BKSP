@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="467.0" prefWidth="750.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.group12_bksp.Mansura.EventC6">
+   <children>
+      <Label layoutX="212.0" layoutY="41.0" text="POST ANNOUNCEMENT">
+         <font>
+            <Font name="Arial Bold" size="28.0" />
+         </font>
+      </Label>
+      <Label layoutX="67.0" layoutY="116.0" text="message " />
+      <TextArea fx:id="announcementTextArea" layoutX="117.0" layoutY="101.0" prefHeight="200.0" prefWidth="200.0" />
+      <Label fx:id="statuslabel" layoutX="395.0" layoutY="256.0" prefHeight="194.0" prefWidth="352.0" />
+      <Button layoutX="504.0" layoutY="189.0" mnemonicParsing="false" onAction="#handlePostButton" prefHeight="26.0" prefWidth="181.0" text="post" />
+   </children>
+</AnchorPane>
