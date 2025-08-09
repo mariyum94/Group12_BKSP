@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="534.0" prefWidth="816.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.group12_bksp.Mansura.CTrainee1">
+   <children>
+      <Label layoutX="267.0" layoutY="37.0" prefHeight="62.0" prefWidth="281.0" text="Training Schedule" textFill="#d70c0c">
+         <font>
+            <Font name="Arial Bold" size="26.0" />
+         </font>
+      </Label>
+      <TableView fx:id="scheduleTable" layoutX="10.0" layoutY="151.0" prefHeight="200.0" prefWidth="802.0">
+        <columns>
+          <TableColumn fx:id="dateColumn" prefWidth="168.80001831054688" text="Date" />
+          <TableColumn fx:id="timeColumn" prefWidth="202.39996337890625" text="Time" />
+            <TableColumn fx:id="activityColumn" prefWidth="206.4000244140625" text="Activity" />
+            <TableColumn fx:id="locationColumn" prefWidth="219.99993896484375" text="Location" />
+        </columns>
+      </TableView>
+      <Label fx:id="statusLabel" layoutX="242.0" layoutY="420.0" prefHeight="48.0" prefWidth="378.0" />
+   </children>
+</AnchorPane>
