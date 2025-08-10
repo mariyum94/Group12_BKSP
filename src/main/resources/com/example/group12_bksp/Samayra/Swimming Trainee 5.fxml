@@ -6,23 +6,38 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.group12_bksp.Samayra.SwimmingTrainee5">
    <children>
       <Label layoutX="36.0" layoutY="94.0" text="Mark drills you’ve completed:" textFill="#00000095">
          <font>
-            <Font name="System Bold" size="13.0" />
+            <Font name="System Bold" size="14.0" />
          </font>
       </Label>
       <Label layoutX="164.0" layoutY="27.0" text="Butterfly Stroke Training" textFill="#c784c9">
          <font>
-            <Font name="System Bold" size="18.0" />
+            <Font name="System Bold" size="20.0" />
          </font>
       </Label>
-      <CheckBox fx:id="Drill1CheckBox" layoutX="100.0" layoutY="137.0" mnemonicParsing="false" text="Body Wave Drill" textFill="#000000ab" />
-      <CheckBox fx:id="Drill3CheckBox" layoutX="100.0" layoutY="200.0" mnemonicParsing="false" text="Timing Drill" textFill="#000000a8" />
-      <CheckBox fx:id="Drill2CheckBox" layoutX="100.0" layoutY="169.0" mnemonicParsing="false" text="Single Arm Butterfly" textFill="#000000a8" />
-      <Button layoutX="471.0" layoutY="340.0" mnemonicParsing="false" onAction="#ReturnHomeOnActionButton" text="Return Home" textFill="#0000009e" />
-      <Button layoutX="47.0" layoutY="257.0" mnemonicParsing="false" onAction="#SaveDrillOnActionButton" text="Save Progress" textFill="#0000008c" />
+      <CheckBox fx:id="Drill1CheckBox" layoutX="100.0" layoutY="137.0" mnemonicParsing="false" text="Body Wave Drill" textFill="#000000c3">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></CheckBox>
+      <CheckBox fx:id="Drill3CheckBox" layoutX="100.0" layoutY="200.0" mnemonicParsing="false" text="Timing Drill" textFill="#000000a8">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></CheckBox>
+      <CheckBox fx:id="Drill2CheckBox" layoutX="100.0" layoutY="169.0" mnemonicParsing="false" text="Single Arm Butterfly" textFill="#000000a8">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></CheckBox>
+      <Button layoutX="471.0" layoutY="340.0" mnemonicParsing="false" onAction="#ReturnHomeOnAction" text="Return Home" textFill="#c583c7ed">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
+      <Button layoutX="47.0" layoutY="257.0" mnemonicParsing="false" onAction="#SaveDrillOnActionButton" text="Save Progress" textFill="#c583c7f9">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font></Button>
+      <Label fx:id="St5OutputLabel" layoutX="115.0" layoutY="307.0" prefHeight="58.0" prefWidth="215.0" />
    </children>
 </AnchorPane>
