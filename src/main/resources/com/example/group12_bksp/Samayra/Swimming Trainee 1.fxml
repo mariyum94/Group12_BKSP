@@ -7,22 +7,37 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.group12_bksp.Samayra.SwimmingTrainee1">
    <children>
-      <Label layoutX="36.0" layoutY="118.0" text="Select Difficulty level:" />
+      <Label layoutX="36.0" layoutY="118.0" text="Select Difficulty level:" textFill="#0000008c">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font></Label>
       <ComboBox fx:id="difficultyComboBox" layoutX="171.0" layoutY="114.0" prefWidth="150.0" />
-      <Label layoutX="36.0" layoutY="183.0" text="Breathe Count:" />
+      <Label layoutX="36.0" layoutY="183.0" text="Breathe Count:" textFill="#0000008c">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font></Label>
       <TextField fx:id="breathCountField" layoutX="172.0" layoutY="179.0" />
       <Label layoutX="20.0" layoutY="165.0" />
       <TextField fx:id="strokeCountField" layoutX="172.0" layoutY="250.0" />
-      <Label layoutX="36.0" layoutY="254.0" text="Stroke Count:" />
-      <Button layoutX="445.0" layoutY="348.0" mnemonicParsing="false" onAction="#ReturnHomeOnAction" text="Return Home" />
-      <Button layoutX="45.0" layoutY="348.0" mnemonicParsing="false" onAction="#submitButtonOnAction" text="Submit" />
+      <Label layoutX="36.0" layoutY="254.0" text="Stroke Count:" textFill="#0000008c">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font></Label>
+      <Button layoutX="445.0" layoutY="348.0" mnemonicParsing="false" onAction="#ReturnHomeOnAction" text="Return Home" textFill="#c47eb7">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
+      <Button layoutX="36.0" layoutY="294.0" mnemonicParsing="false" onAction="#submitButton1OnAction" prefHeight="26.0" prefWidth="97.0" text="Submit" textFill="#c47eb7">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font></Button>
       <Label layoutX="216.0" layoutY="20.0" prefHeight="34.0" prefWidth="168.0" text="Free Style Training" textFill="#c47eb7">
          <font>
             <Font name="System Bold" size="18.0" />
          </font>
       </Label>
+      <Label fx:id="St1OutputLabel" layoutX="139.0" layoutY="321.0" prefHeight="62.0" prefWidth="182.0" />
    </children>
 </AnchorPane>
