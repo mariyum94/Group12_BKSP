@@ -9,7 +9,7 @@ public class SwimmingTrainee6
     @javafx.fxml.FXML
     private TextField HoldTimeTextField;
     @javafx.fxml.FXML
-    private Label BreathControlOutputL;
+    private Label St6OutputLabel;
 
     @javafx.fxml.FXML
     public void initialize() {
@@ -19,7 +19,11 @@ public class SwimmingTrainee6
     public void SubmitHoldTimeButtonOnAction(ActionEvent actionEvent) {
     }
 
-    @javafx.fxml.FXML
+    @java.lang.Deprecated
     public void ReturnHomeOnActionButton(ActionEvent actionEvent) {
+    }
+
+    @javafx.fxml.FXML
+    public void ReturnHomeOnAction(ActionEvent actionEvent) {
     }
 }

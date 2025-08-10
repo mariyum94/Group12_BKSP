@@ -6,22 +6,27 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.group12_bksp.Samayra.SwimmingTrainee6">
    <children>
-      <Label fx:id="BreathControlOutputL" layoutX="225.0" layoutY="216.0" prefHeight="42.0" prefWidth="238.0" />
+      <Label fx:id="St6OutputLabel" layoutX="225.0" layoutY="216.0" prefHeight="42.0" prefWidth="238.0" />
       <Label layoutX="47.0" layoutY="106.0" text="Underwater Hold Time (seconds):" textFill="#0000008c">
          <font>
             <Font name="System Bold" size="12.0" />
          </font>
       </Label>
-      <Label layoutX="184.0" layoutY="14.0" text="Breath Control Training" textFill="#bb71bf">
+      <Label layoutX="182.0" layoutY="28.0" text="Breath Control Training" textFill="#bb71bf">
          <font>
-            <Font name="System Bold" size="18.0" />
+            <Font name="System Bold" size="20.0" />
          </font>
       </Label>
       <TextField fx:id="HoldTimeTextField" layoutX="270.0" layoutY="102.0" promptText="e.g. 45" />
-      <Button layoutX="474.0" layoutY="301.0" mnemonicParsing="false" onAction="#ReturnHomeOnActionButton" text="Return Home" textFill="#000000a1" />
-      <Button layoutX="318.0" layoutY="174.0" mnemonicParsing="false" onAction="#SubmitHoldTimeButtonOnAction" text="Submit" textFill="#000000a5" />
+      <Button layoutX="474.0" layoutY="301.0" mnemonicParsing="false" onAction="#ReturnHomeOnAction" text="Return Home" textFill="#b871bdfe">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
+      <Button layoutX="307.0" layoutY="164.0" mnemonicParsing="false" onAction="#SubmitHoldTimeButtonOnAction" text="Submit" textFill="#b871bd">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font></Button>
    </children>
 </AnchorPane>
