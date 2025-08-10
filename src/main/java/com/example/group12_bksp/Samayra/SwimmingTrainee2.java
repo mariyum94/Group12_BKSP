@@ -2,6 +2,7 @@ package com.example.group12_bksp.Samayra;
 
 import javafx.event.ActionEvent;
 import javafx.scene.control.DatePicker;
+import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 
 public class SwimmingTrainee2
@@ -12,6 +13,8 @@ public class SwimmingTrainee2
     private TextField LapTimeTextField;
     @javafx.fxml.FXML
     private TextField RestDurationTextField;
+    @javafx.fxml.FXML
+    private Label St2OutputLabel;
 
     @javafx.fxml.FXML
     public void initialize() {
