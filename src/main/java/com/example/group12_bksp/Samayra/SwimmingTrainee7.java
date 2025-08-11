@@ -1,15 +1,18 @@
 package com.example.group12_bksp.Samayra;
 
 import javafx.event.ActionEvent;
+import javafx.scene.control.ComboBox;
 import javafx.scene.control.Label;
-import javafx.scene.control.TextArea;
+import javafx.scene.control.TextField;
 
-public class SwimmingTrainee3
+public class SwimmingTrainee7
 {
     @javafx.fxml.FXML
-    private TextArea FeedbackTextArea;
+    private TextField TreadTimeTextField;
     @javafx.fxml.FXML
-    private Label St3OutputLabel;
+    private ComboBox DifficultyComboBox7;
+    @javafx.fxml.FXML
+    private Label St7OutputLabel;
 
     @javafx.fxml.FXML
     public void initialize() {
@@ -20,7 +23,7 @@ public class SwimmingTrainee3
     }
 
     @javafx.fxml.FXML
-    public void SaveProgressButtonOnAction(ActionEvent actionEvent) {
+    public void LogResultButtonOnAction(ActionEvent actionEvent) {
     }
 
     @javafx.fxml.FXML

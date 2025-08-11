@@ -4,19 +4,25 @@ import javafx.event.ActionEvent;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 
-public class SwimmingTrainee6
+public class SwimmingTrainee8
 {
     @javafx.fxml.FXML
-    private TextField HoldTimeTextField;
+    private TextField EventNameTextField;
     @javafx.fxml.FXML
-    private Label St6OutputLabel;
+    private TextField RaceTimeTextField;
+    @javafx.fxml.FXML
+    private Label St8OutputLabel;
 
     @javafx.fxml.FXML
     public void initialize() {
     }
 
     @javafx.fxml.FXML
-    public void SubmitHoldTimeButtonOnAction(ActionEvent actionEvent) {
+    public void UploadRaceVidOnAction(ActionEvent actionEvent) {
+    }
+
+    @javafx.fxml.FXML
+    public void AnalyzeRacePerformanceButton(ActionEvent actionEvent) {
     }
 
     @java.lang.Deprecated
