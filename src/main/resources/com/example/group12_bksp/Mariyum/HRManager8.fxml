@@ -1,14 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="com.example.group12_bksp.Mariyum.HRManager8"
-            prefHeight="400.0" prefWidth="600.0">
-
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.group12_bksp.Mariyum.HRManager8">
+   <children>
+      <Label layoutX="54.0" layoutY="115.0" text="Name:" textFill="#2473ea" />
+      <TextField fx:id="nameField" layoutX="119.0" layoutY="111.0" prefWidth="150" />
+      <Label layoutX="54.0" layoutY="159.0" text="Weight (kg):" textFill="#2473ea" />
+      <TextField fx:id="weightField" layoutX="144.0" layoutY="155.0" prefWidth="100" />
+      <Label layoutX="326.0" layoutY="155.0" prefHeight="18.0" prefWidth="58.0" text="Injury:" textFill="#2473ea" />
+      <TextField fx:id="injuryField" layoutX="413.0" layoutY="151.0" prefWidth="80" />
+      <Button layoutX="413.0" layoutY="236.0" onAction="#addRecordButton" prefWidth="120" text="Add Record" textFill="#2473ea" />
+      <TableView fx:id="healthTable" layoutX="54.0" layoutY="207.0" prefHeight="110.0" prefWidth="310.0">
+         <columns>
+            <TableColumn fx:id="nameCol" prefWidth="106.39996337890625" text="Name" />
+            <TableColumn fx:id="weightCol" prefWidth="97.59991455078125" text="Weight (kg)" />
+            <TableColumn fx:id="injuryCol" prefWidth="103.20001220703125" text="Injury" />
+         </columns>
+      </TableView>
+      <TextField fx:id="textarea" layoutX="155.0" layoutY="348.0" />
+      <Button layoutX="491.0" layoutY="353.0" onAction="#returnToDashboardButton" text="Return Home" textFill="#2473ea" />
+      <Label layoutX="129.0" layoutY="47.0" prefHeight="30.0" prefWidth="296.0" style="-fx-font-size: 20px;" text="Manage Health &amp; Fitness Record" textFill="#2473ea" />
+   </children>
 </AnchorPane>

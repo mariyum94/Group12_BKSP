@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.group12_bksp.Samayra.SwimmingTrainee2">
+   <children>
+      <Label layoutX="199.0" layoutY="26.0" text="Stamina Training" textFill="#c47eb7">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="29.0" layoutY="81.0" text="Enter lap times (seconds), rest durations (seconds), and select session date:" textFill="#00000093">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="54.0" layoutY="228.0" text="Session Date:" textFill="#0000008c">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font></Label>
+      <Label layoutX="50.0" layoutY="182.0" text="Rest Duration:" textFill="#0000008e">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font></Label>
+      <Label layoutX="50.0" layoutY="134.0" text="Lap Time:" textFill="#0000008c">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font></Label>
+      <TextField fx:id="RestDurationTextField" layoutX="150.0" layoutY="178.0" promptText="e.g., 30" />
+      <TextField fx:id="LapTimeTextField" layoutX="150.0" layoutY="130.0" promptText="e.g., 50" />
+      <DatePicker fx:id="SessionDatePicker" layoutX="152.0" layoutY="224.0" />
+      <Button layoutX="468.0" layoutY="352.0" mnemonicParsing="false" onAction="#ReturnHomeOnAction" text="Return Home" textFill="#c47eb7">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
+      <Button layoutX="55.0" layoutY="281.0" mnemonicParsing="false" onAction="#SaveTrainingOnAction" text="Save Training" textFill="#c47eb7">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font></Button>
+      <Label fx:id="St2OutputLabel" layoutX="58.0" layoutY="327.0" prefHeight="50.0" prefWidth="230.0" />
+   </children>
+</AnchorPane>

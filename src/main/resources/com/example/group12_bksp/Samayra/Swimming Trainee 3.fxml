@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.group12_bksp.Samayra.SwimmingTrainee3">
+   <children>
+      <Label layoutX="43.0" layoutY="102.0" text="Reflect on your posture and movement during backstroke drills:" textFill="#0000009a">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="219.0" layoutY="25.0" text="Backstroke Basics" textFill="#bc6db0e5">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="FeedbackTextArea" layoutX="113.0" layoutY="153.0" prefHeight="119.0" prefWidth="305.0" promptText="Write your feedback here..." />
+      <Button layoutX="489.0" layoutY="360.0" mnemonicParsing="false" onAction="#ReturnHomeOnAction" text="Return Home" textFill="#ba6caee7">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
+      <Button layoutX="218.0" layoutY="293.0" mnemonicParsing="false" onAction="#SaveProgressButtonOnAction" text="Save Progress" textFill="#ba6caede">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
+      <Label fx:id="St3OutputLabel" layoutX="185.0" layoutY="322.0" prefHeight="50.0" prefWidth="206.0" />
+   </children>
+</AnchorPane>
