@@ -10,20 +10,16 @@
 
 <AnchorPane prefHeight="520.0" prefWidth="820.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.group12_bksp.ROMTAHENA.CricketCoach3">
 
-    <!-- Title -->
     <Label layoutX="340.0" layoutY="14.0" style="-fx-font-size:20px; -fx-font-weight:bold;" text="Player Stats" textFill="#519c56" />
 
-    <!-- Player selection -->
     <Label layoutX="30.0" layoutY="60.0" text="Select Player:" />
     <ComboBox fx:id="playerComboBox" layoutX="120.0" layoutY="55.0" prefWidth="300.0" promptText="Choose player..." />
 
-    <!-- Export Report button -->
     <Button layoutX="30.0" layoutY="461.0" onAction="#ExportButton" prefWidth="120.0" text="Export Report" textFill="#519c56">
       <font>
          <Font name="System Bold" size="14.0" />
       </font></Button>
 
-    <!-- TableView showing stats -->
     <TableView fx:id="playerStatsTable" layoutX="30.0" layoutY="110.0" prefHeight="340.0" prefWidth="760.0">
 
         <columns>
@@ -38,7 +34,6 @@
         </columns>
     </TableView>
 
-    <!-- Return Home button -->
     <Button layoutX="670.0" layoutY="460.0" onAction="#ReturnHomeButton" prefWidth="120.0" text="Return Home" textFill="#519c56">
       <font>
          <Font name="System Bold" size="14.0" />
