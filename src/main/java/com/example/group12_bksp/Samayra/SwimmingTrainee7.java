@@ -22,11 +22,15 @@ public class SwimmingTrainee7
     public void ReturnHomeButtonOnAction(ActionEvent actionEvent) {
     }
 
-    @javafx.fxml.FXML
+    @java.lang.Deprecated
     public void LogResultButtonOnAction(ActionEvent actionEvent) {
     }
 
     @javafx.fxml.FXML
     public void ReturnHomeOnAction(ActionEvent actionEvent) {
+    }
+
+    @javafx.fxml.FXML
+    public void SubmitTimeButtonOnAction(ActionEvent actionEvent) {
     }
 }

@@ -18,15 +18,15 @@
             <Font name="System Bold" size="20.0" />
          </font>
       </Label>
-      <CheckBox fx:id="Drill1CheckBox" layoutX="100.0" layoutY="137.0" mnemonicParsing="false" text="Body Wave Drill" textFill="#000000c3">
+      <CheckBox fx:id="Drill1CheckBox" layoutX="100.0" layoutY="137.0" mnemonicParsing="false" text="Dolphin Kick" textFill="#000000c3">
          <font>
             <Font name="System Bold" size="12.0" />
          </font></CheckBox>
-      <CheckBox fx:id="Drill3CheckBox" layoutX="100.0" layoutY="200.0" mnemonicParsing="false" text="Timing Drill" textFill="#000000a8">
+      <CheckBox fx:id="Drill3CheckBox" layoutX="100.0" layoutY="200.0" mnemonicParsing="false" text="Breathing" textFill="#000000a8">
          <font>
             <Font name="System Bold" size="12.0" />
          </font></CheckBox>
-      <CheckBox fx:id="Drill2CheckBox" layoutX="100.0" layoutY="169.0" mnemonicParsing="false" text="Single Arm Butterfly" textFill="#000000a8">
+      <CheckBox fx:id="Drill2CheckBox" layoutX="100.0" layoutY="169.0" mnemonicParsing="false" text="Arm Sweep" textFill="#000000a8">
          <font>
             <Font name="System Bold" size="12.0" />
          </font></CheckBox>
