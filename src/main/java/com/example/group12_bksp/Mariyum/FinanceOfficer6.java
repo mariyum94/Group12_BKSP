@@ -12,17 +12,17 @@ import java.io.IOException;
 public class FinanceOfficer6
 {
     @javafx.fxml.FXML
-    private TableColumn budgetColumn;
+    private TableColumn<FinanceOfficerModelClass4 ,Integer> budgetColumn;
     @javafx.fxml.FXML
     private TextField DepartmentField;
     @javafx.fxml.FXML
-    private TableColumn departmentColumn;
+    private TableColumn<FinanceOfficerModelClass4,String> departmentColumn;
     @javafx.fxml.FXML
     private TextField BudgetField;
     @javafx.fxml.FXML
     private Label msglabel;
     @javafx.fxml.FXML
-    private TableView budgetTable;
+    private TableView<FinanceOfficerModelClass4> budgetTable;
 
     @javafx.fxml.FXML
     public void initialize() {
