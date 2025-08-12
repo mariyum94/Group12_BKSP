@@ -37,6 +37,10 @@ public class FinanceOfficer1
 
     static ArrayList<FinanceOfficerModelClass1> FinanceOfficerModelClass1list= new ArrayList<>();
 
+    public static FinanceOfficerModelClass1 getFinanceOfficerModelClass1List() {
+        return null;
+    }
+
     @FXML
     public void initialize() {
         Budgetcol.setCellValueFactory(new PropertyValueFactory<>("budget"));
@@ -89,7 +93,7 @@ public class FinanceOfficer1
         }
         int budget = Integer.parseInt(budgetText);
         double amount = Double.parseDouble(amountText);
-        FinanceOfficerModelClass1 expense = new FinanceOfficerModelClass1(category, amount,budget, date);
+        FinanceOfficerModelClass1 expense = new FinanceOfficerModelClass1(category, amount, date);
         FinanceOfficerModelClass1list.add(expense);
         expenseTable.getItems().add(expense);
         msglabel.setText("Expense added.");
