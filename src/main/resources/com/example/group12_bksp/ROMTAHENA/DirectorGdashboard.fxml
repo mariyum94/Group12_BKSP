@@ -5,20 +5,25 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="400.0" prefWidth="658.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.group12_bksp.ROMTAHENA.DirectorGdashboardController">
+<AnchorPane prefHeight="360.0" prefWidth="615.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.group12_bksp.ROMTAHENA.DirectorGdashboardController">
    <children>
-      <Label layoutX="207.0" layoutY="47.0" text="Director General DashBoard" textFill="#075fb9">
+      <Label layoutX="207.0" layoutY="47.0" text="Director General DashBoard" textFill="#519c56">
          <font>
             <Font name="System Bold" size="22.0" />
          </font>
       </Label>
-      <Button layoutX="102.0" layoutY="101.0" mnemonicParsing="false" onAction="#monitorAthleteProgressButton" text="Monitor Athlete Progress" />
-      <Button layoutX="102.0" layoutY="154.0" mnemonicParsing="false" onAction="#approveFacilityRequestButton" text="Approve Facility Requests" />
-      <Button layoutX="102.0" layoutY="200.0" mnemonicParsing="false" onAction="#assignBudgetButton" text="Assign Budgets to Departments" />
-      <Button layoutX="102.0" layoutY="248.0" mnemonicParsing="false" onAction="#generateReportButton" text=" Generate Performance Reports" />
-      <Button layoutX="396.0" layoutY="101.0" mnemonicParsing="false" onAction="#recruitCoachesButton" text=" Recruit Coaches" />
-      <Button layoutX="396.0" layoutY="154.0" mnemonicParsing="false" onAction="#approveTournamentButton" text="Approve Tournament Participation" />
-      <Button layoutX="396.0" layoutY="200.0" mnemonicParsing="false" onAction="#evaluatePerformanceButton" text=" Evaluate Department Performance" />
-      <Button layoutX="396.0" layoutY="248.0" mnemonicParsing="false" onAction="#communicatewithCoachesButton" text="Communicate with Coaches" />
+      <Button layoutX="102.0" layoutY="101.0" mnemonicParsing="false" onAction="#MonitorAthleteProgressButton" text="View Progress" />
+      <Button layoutX="102.0" layoutY="154.0" mnemonicParsing="false" onAction="#ApproveFacilityRequestButton" text="Facility Requests" />
+      <Button layoutX="101.0" layoutY="200.0" mnemonicParsing="false" onAction="#AssignBudgetButton" text="Budgets " />
+      <Button layoutX="102.0" layoutY="248.0" mnemonicParsing="false" onAction="#GenerateReportButton" text=" Performance Reports" />
+      <Button layoutX="396.0" layoutY="101.0" mnemonicParsing="false" onAction="#RecruitCoachesButton" text=" Recruit " />
+      <Button layoutX="395.0" layoutY="154.0" mnemonicParsing="false" onAction="#ApproveTournamentButton" text="Tournament Requests" />
+      <Button layoutX="396.0" layoutY="200.0" mnemonicParsing="false" onAction="#EvaluatePerformanceButton" text="Department Evaluation" />
+      <Button layoutX="396.0" layoutY="248.0" mnemonicParsing="false" onAction="#CommunicateWithCoachesButton" text="Communicate with Coaches" />
+      <Button layoutX="513.0" layoutY="303.0" mnemonicParsing="false" onAction="#LogOutButton" text="Log Out" textFill="#519c56">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
    </children>
 </AnchorPane>
