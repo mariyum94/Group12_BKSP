@@ -39,13 +39,7 @@ public class FinanceOfficer4 {
 
     @FXML
     void loadButton(ActionEvent  actionEvent) {
-        loadPieChartData();
-        loadBarChartData();
 
-    }
-
-
-    void loadPieChartData() {
         List<PieChart.Data> data = new ArrayList<>();
         data.add(new PieChart.Data("A", 3));
         data.add(new PieChart.Data("B", 5));
@@ -54,10 +48,7 @@ public class FinanceOfficer4 {
         data.add(new PieChart.Data("E", 2));
 
         financePieChart.getData().addAll(data);
-    }
-
-    void loadBarChartData() {
-        financeBarChart.getData().clear();
+        
 
         XYChart.Series series1 = new XYChart.Series();
         series1.setName("Section 1");
