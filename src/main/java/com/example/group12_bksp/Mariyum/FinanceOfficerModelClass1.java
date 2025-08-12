@@ -10,7 +10,7 @@ public class FinanceOfficerModelClass1 implements Serializable {
     private int budget;
     private LocalDate date;
 
-    public FinanceOfficerModelClass1(String category, double amount,int budget, LocalDate date) {
+    public FinanceOfficerModelClass1(String category, double amount, LocalDate date) {
         this.category = category;
         this.amount = amount;
         this.budget = budget;

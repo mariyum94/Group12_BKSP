@@ -1,42 +1,56 @@
 package com.example.group12_bksp.ROMTAHENA;
 
+import com.example.group12_bksp.SceneSwitcher;
 import javafx.event.ActionEvent;
+
+import java.io.IOException;
 
 public class DirectorGdashboardController
 {
+
     @javafx.fxml.FXML
-    public void initialize() {
+    public void MonitorAthleteProgressButton(ActionEvent actionEvent) throws IOException {
+        SceneSwitcher.switchTo("/com/example/group12_bksp/ROMTAHENA/DirectorGeneral1.fxml", actionEvent);
     }
 
     @javafx.fxml.FXML
-    public void recruitCoachesButton(ActionEvent actionEvent) {
+    public void ApproveFacilityRequestButton(ActionEvent actionEvent) throws IOException {
+        SceneSwitcher.switchTo("/com/example/group12_bksp/ROMTAHENA/DirectorGeneral2.fxml", actionEvent);
     }
 
     @javafx.fxml.FXML
-    public void approveTournamentButton(ActionEvent actionEvent) {
+    public void GenerateReportButton(ActionEvent actionEvent) throws IOException {
+        SceneSwitcher.switchTo("/com/example/group12_bksp/ROMTAHENA/DirectorGeneral3.fxml", actionEvent);
     }
 
     @javafx.fxml.FXML
-    public void communicatewithCoachesButton(ActionEvent actionEvent) {
+    public void RecruitCoachesButton(ActionEvent actionEvent) throws IOException {
+        SceneSwitcher.switchTo("/com/example/group12_bksp/ROMTAHENA/DirectorGeneral4.fxml", actionEvent);
     }
 
     @javafx.fxml.FXML
-    public void assignBudgetButton(ActionEvent actionEvent) {
+    public void ApproveTournamentButton(ActionEvent actionEvent) throws IOException {
+        SceneSwitcher.switchTo("/com/example/group12_bksp/ROMTAHENA/DirectorGeneral5.fxml", actionEvent);
     }
 
     @javafx.fxml.FXML
-    public void generateReportButton(ActionEvent actionEvent) {
+    public void EvaluatePerformanceButton(ActionEvent actionEvent) throws IOException {
+        SceneSwitcher.switchTo("/com/example/group12_bksp/ROMTAHENA/DirectorGeneral6.fxml", actionEvent);
     }
 
     @javafx.fxml.FXML
-    public void approveFacilityRequestButton(ActionEvent actionEvent) {
+    public void AssignBudgetButton(ActionEvent actionEvent) throws IOException {
+        SceneSwitcher.switchTo("/com/example/group12_bksp/ROMTAHENA/DirectorGeneral7.fxml", actionEvent);
     }
 
     @javafx.fxml.FXML
-    public void monitorAthleteProgressButton(ActionEvent actionEvent) {
+    public void CommunicateWithCoachesButton(ActionEvent actionEvent) throws IOException {
+        SceneSwitcher.switchTo("/com/example/group12_bksp/ROMTAHENA/DirectorGeneral8.fxml", actionEvent);
     }
 
     @javafx.fxml.FXML
-    public void evaluatePerformanceButton(ActionEvent actionEvent) {
+    public void LogOutButton(ActionEvent actionEvent) throws IOException {
+        SceneSwitcher.switchTo("/com/example/group12_bksp/Login.fxml", actionEvent);
     }
+
 }

@@ -19,32 +19,38 @@ public class CricketCoachDashboardController
     }
 
     @javafx.fxml.FXML
-    public void EvaluteFitnessButton(ActionEvent actionEvent) {
+    public void ViewPlayerStatsButton(ActionEvent actionEvent) throws IOException {
+        SceneSwitcher.switchTo("/com/example/group12_bksp/ROMTAHENA/CricketCoach3.fxml", actionEvent);
     }
 
     @javafx.fxml.FXML
-    public void CommunicateWithTraineeButton(ActionEvent actionEvent) {
+    public void ManageProfileButton(ActionEvent  actionEvent) throws IOException {
+        SceneSwitcher.switchTo("/com/example/group12_bksp/ROMTAHENA/CricketCoach4.fxml", actionEvent);
     }
 
     @javafx.fxml.FXML
-    public void ViewPlayerButton(ActionEvent actionEvent) {
+    public void EvaluateFitnessButton(ActionEvent actionEvent) throws IOException {
+        SceneSwitcher.switchTo("/com/example/group12_bksp/ROMTAHENA/CricketCoach5.fxml", actionEvent);
     }
 
     @javafx.fxml.FXML
-    public void TrackTeamAttendanceButton(ActionEvent actionEvent) {
+    public void CommunicateWithTraineeButton(ActionEvent actionEvent) throws IOException {
+        SceneSwitcher.switchTo("/com/example/group12_bksp/ROMTAHENA/CricketCoach6.fxml", actionEvent);
+    }
+
+
+    @javafx.fxml.FXML
+    public void TrackTeamAttendanceButton(ActionEvent actionEvent) throws IOException {
+        SceneSwitcher.switchTo("/com/example/group12_bksp/ROMTAHENA/CricketCoach7.fxml", actionEvent);
     }
 
     @javafx.fxml.FXML
-    public void ManageProfileButton(ActionEvent actionEvent) {
-    }
-
-    @javafx.fxml.FXML
-    public void SubmitFeedbackButton(ActionEvent actionEvent) {
+    public void SubmitFeedbackButton(ActionEvent actionEvent) throws IOException {
+        SceneSwitcher.switchTo("/com/example/group12_bksp/ROMTAHENA/CricketCoach8.fxml", actionEvent);
     }
 
     @javafx.fxml.FXML
     public void LogOutButton(ActionEvent actionEvent) throws IOException {
         SceneSwitcher.switchTo("/com/example/group12_bksp/Login.fxml", actionEvent);
     }
-
 }

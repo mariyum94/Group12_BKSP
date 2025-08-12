@@ -5,7 +5,6 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
-<?import javafx.scene.control.TextArea?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 
@@ -21,7 +20,7 @@
          </columns>
       </TableView>
       <Button layoutX="494.0" layoutY="381.0" onAction="#returnToDashboardButton" text="Return Home" textFill="#2473ea" />
-      <Label fx:id="messageLabel" layoutX="206.0" layoutY="397.0" prefHeight="18.0" prefWidth="154.0" textFill="#14c779" />
+      <Label fx:id="messageLabel" layoutX="228.0" layoutY="338.0" prefHeight="18.0" prefWidth="154.0" textFill="#14c779" />
       <Label layoutX="166.0" layoutY="36.0" prefHeight="30.0" prefWidth="346.0" style="-fx-font-size: 20px;" text="Maintain Financial Transactions Log" textFill="#2473ea" />
       <TextField fx:id="AmountField" layoutX="132.0" layoutY="103.0" prefWidth="150" />
       <Label layoutX="68.0" layoutY="147.0" text="Category:" textFill="#2473ea" />
@@ -29,6 +28,5 @@
       <Label layoutX="68.0" layoutY="107.0" text="Amount:" textFill="#2473ea" />
       <Label layoutX="369.0" layoutY="141.0" text="Date:" textFill="#2473ea" />
       <Button layoutX="91.0" layoutY="334.0" onAction="#loaddataButton" prefHeight="26.0" prefWidth="58.0" text="Load " textFill="#2473ea" />
-      <TextArea fx:id="textArea" layoutX="204.0" layoutY="324.0" prefHeight="46.0" prefWidth="272.0" />
    </children>
 </AnchorPane>
