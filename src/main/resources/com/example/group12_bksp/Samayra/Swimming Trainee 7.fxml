@@ -13,7 +13,7 @@
          <font>
             <Font name="System Bold Italic" size="12.0" />
          </font></Label>
-      <Label layoutX="64.0" layoutY="113.0" text="Time (seconds):" textFill="#000000ab">
+      <Label layoutX="64.0" layoutY="113.0" text="Time completed :" textFill="#000000ab">
          <font>
             <Font name="System Bold Italic" size="12.0" />
          </font></Label>
@@ -22,13 +22,13 @@
             <Font name="System Bold" size="20.0" />
          </font>
       </Label>
-      <TextField fx:id="TreadTimeTextField" layoutX="170.0" layoutY="109.0" promptText="e.g. 300" />
+      <TextField fx:id="TreadTimeTextField" layoutX="225.0" layoutY="109.0" />
       <ComboBox fx:id="DifficultyComboBox7" layoutX="170.0" layoutY="168.0" prefWidth="150.0" promptText="Select level" />
       <Button layoutX="463.0" layoutY="324.0" mnemonicParsing="false" onAction="#ReturnHomeOnAction" text="Return Home" textFill="#c77fc2fa">
          <font>
             <Font name="System Bold" size="12.0" />
          </font></Button>
-      <Button layoutX="91.0" layoutY="241.0" mnemonicParsing="false" onAction="#LogResultButtonOnAction" text="Log Result" textFill="#c77fc2">
+      <Button layoutX="91.0" layoutY="241.0" mnemonicParsing="false" onAction="#SubmitTimeButtonOnAction" text="Submit Time" textFill="#c77fc2">
          <font>
             <Font name="System Bold" size="13.0" />
          </font></Button>
