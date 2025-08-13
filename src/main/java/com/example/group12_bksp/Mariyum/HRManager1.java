@@ -40,8 +40,6 @@ public class HRManager1 {
     @FXML
     private Label messageLabel;
 
-    @FXML
-    private Label messageLabel1;
     static ArrayList<HRManagerModelClass1> HRManagerModelClass1list= new ArrayList<>();
 
     @javafx.fxml.FXML
