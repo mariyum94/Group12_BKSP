@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="520.0" prefWidth="820.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.group12_bksp.ROMTAHENA.CricketCoach3">
+
+    <Label layoutX="340.0" layoutY="14.0" style="-fx-font-size:20px; -fx-font-weight:bold;" text="Player Stats" textFill="#519c56" />
+
+    <Label layoutX="30.0" layoutY="60.0" text="Select Player:" />
+    <ComboBox fx:id="playerComboBox" layoutX="120.0" layoutY="55.0" prefWidth="300.0" promptText="Choose player..." />
+
+    <Button layoutX="30.0" layoutY="461.0" onAction="#ExportButton" prefWidth="120.0" text="Export Report" textFill="#519c56">
+      <font>
+         <Font name="System Bold" size="14.0" />
+      </font></Button>
+
+    <TableView fx:id="playerStatsTable" layoutX="30.0" layoutY="110.0" prefHeight="340.0" prefWidth="760.0">
+
+        <columns>
+            <TableColumn fx:id="colMatch" prefWidth="110.0" text="Match" />
+            <TableColumn fx:id="colDate" prefWidth="100.0" text="Date" />
+            <TableColumn fx:id="colOpp" prefWidth="120.0" text="Opponent" />
+            <TableColumn fx:id="colBatRuns" prefWidth="90.0" text="Bat Runs" />
+            <TableColumn fx:id="colBatBalls" prefWidth="90.0" text="Bat Balls" />
+            <TableColumn fx:id="colBowlWkts" prefWidth="90.0" text="Bowl Wkts" />
+            <TableColumn fx:id="colBowlRuns" prefWidth="90.0" text="Bowl Runs" />
+            <TableColumn fx:id="colFitness" prefWidth="70.0" text="Fitness" />
+        </columns>
+    </TableView>
+
+    <Button layoutX="670.0" layoutY="460.0" onAction="#ReturnHomeButton" prefWidth="120.0" text="Return Home" textFill="#519c56">
+      <font>
+         <Font name="System Bold" size="14.0" />
+      </font></Button>
+
+</AnchorPane>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="523.0" prefWidth="795.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.group12_bksp.ROMTAHENA.CricketCoach4">
+    <Label layoutX="300.0" layoutY="14.0" style="-fx-font-size:20px; -fx-font-weight:bold;" text="Manage Practice Drills" textFill="#519c56">
+      <font>
+         <Font size="22.0" />
+      </font></Label>
+    <Label layoutX="40.0" layoutY="70.0" text="Drill Name:" />
+    <TextField fx:id="drillNameField" layoutX="140.0" layoutY="65.0" prefWidth="250.0" />
+
+    <Label layoutX="40.0" layoutY="110.0" text="Drill Type:" />
+    <ComboBox fx:id="drillTypeComboBox" layoutX="140.0" layoutY="105.0" prefWidth="250.0" promptText="Select drill type..." />
+
+    <Label layoutX="40.0" layoutY="150.0" text="Duration (mins):" />
+    <TextField fx:id="durationField" layoutX="140.0" layoutY="145.0" prefWidth="250.0" />
+
+    <Button layoutX="420.0" layoutY="105.0" onAction="#AddDrillButton" prefWidth="100.0" text="Add Drill" textFill="#519c56">
+      <font>
+         <Font name="System Bold" size="14.0" />
+      </font></Button>
+
+    <TableView fx:id="drillTable" layoutX="40.0" layoutY="200.0" prefHeight="260.0" prefWidth="740.0">
+
+        <columns>
+            <TableColumn fx:id="colDrillName" prefWidth="250.0" text="Drill Name" />
+            <TableColumn fx:id="colDrillType" prefWidth="200.0" text="Type" />
+            <TableColumn fx:id="colDuration" prefWidth="150.0" text="Duration" />
+        </columns>
+    </TableView>
+
+    <Button layoutX="40.0" layoutY="470.0" onAction="#DeleteDrillButton" prefWidth="120.0" text="Delete Drill" textFill="#519c56">
+      <font>
+         <Font name="System Bold" size="14.0" />
+      </font></Button>
+
+    <Button layoutX="660.0" layoutY="470.0" onAction="#ReturnHomeButton" prefWidth="120.0" text="Return Home" textFill="#519c56">
+      <font>
+         <Font name="System Bold" size="14.0" />
+      </font></Button>
+
+</AnchorPane>

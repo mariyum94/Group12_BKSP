@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="440.0" prefWidth="634.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.group12_bksp.Mariyum.FinanceOfficer3">
+   <children>
+      <DatePicker fx:id="filterDatePicker" layoutX="413.0" layoutY="136.0" prefHeight="26.0" prefWidth="145.0" style="-fx-background-color: #2473ea;" />
+      <Button layoutX="494.0" layoutY="231.0" onAction="#filterButton" prefHeight="26.0" prefWidth="66.0" text="Filter" textFill="#2473ea" />
+      <TableView fx:id="logTableview" layoutX="51.0" layoutY="197.0" prefHeight="94.0" prefWidth="386.0">
+         <columns>
+            <TableColumn fx:id="dateCol" prefWidth="110.39996337890625" text="Date" />
+            <TableColumn fx:id="categoryCol" prefWidth="131.1999969482422" text="Category" />
+            <TableColumn fx:id="amountCol" prefWidth="143.199951171875" text="Amount" />
+         </columns>
+      </TableView>
+      <Button layoutX="494.0" layoutY="381.0" onAction="#returnToDashboardButton" text="Return Home" textFill="#2473ea" />
+      <Label fx:id="messageLabel" layoutX="228.0" layoutY="338.0" prefHeight="18.0" prefWidth="154.0" textFill="#14c779" />
+      <Label layoutX="166.0" layoutY="36.0" prefHeight="30.0" prefWidth="346.0" style="-fx-font-size: 20px;" text="Maintain Financial Transactions Log" textFill="#2473ea" />
+      <TextField fx:id="AmountField" layoutX="132.0" layoutY="103.0" prefWidth="150" />
+      <Label layoutX="68.0" layoutY="147.0" text="Category:" textFill="#2473ea" />
+      <TextField fx:id="categoryField" layoutX="144.0" layoutY="143.0" prefWidth="100" />
+      <Label layoutX="68.0" layoutY="107.0" text="Amount:" textFill="#2473ea" />
+      <Label layoutX="369.0" layoutY="141.0" text="Date:" textFill="#2473ea" />
+      <Button layoutX="91.0" layoutY="334.0" onAction="#loaddataButton" prefHeight="26.0" prefWidth="58.0" text="Load " textFill="#2473ea" />
+   </children>
+</AnchorPane>

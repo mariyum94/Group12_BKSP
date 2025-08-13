@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="575.0" prefWidth="830.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.group12_bksp.ROMTAHENA.CricketCoach8">
+    <Label layoutX="300.0" layoutY="20.0" style="-fx-font-size:20px; -fx-font-weight:bold;" text="Training Feedback" textFill="#519c56">
+      <font>
+         <Font name="System Bold" size="22.0" />
+      </font></Label>
+
+    <Label layoutX="40.0" layoutY="80.0" text="Trainee:" />
+    <ComboBox fx:id="traineeComboBox" layoutX="150.0" layoutY="75.0" prefWidth="250.0" promptText="Select trainee..." />
+
+    <Label layoutX="40.0" layoutY="120.0" text="Session:" />
+    <ComboBox fx:id="sessionComboBox" layoutX="150.0" layoutY="115.0" prefWidth="250.0" promptText="Select session..." />
+
+    <Label layoutX="40.0" layoutY="160.0" text="Rating:" />
+    <ComboBox fx:id="ratingComboBox" layoutX="150.0" layoutY="155.0" prefWidth="250.0" promptText="Select rating (1-5)" />
+
+    <Label layoutX="40.0" layoutY="200.0" text="Feedback:" />
+    <TextArea fx:id="feedbackArea" layoutX="150.0" layoutY="195.0" prefHeight="80.0" prefWidth="350.0" wrapText="true" />
+
+    <Button layoutX="40.0" layoutY="510.0" onAction="#SubmitButton" prefHeight="27.0" prefWidth="107.0" text="Submit" textFill="#519c56">
+      <font>
+         <Font name="System Bold" size="14.0" />
+      </font></Button>
+
+    <Button fx:id="updateButton" layoutX="175.0" layoutY="510.0" onAction="#UpdateButton" prefWidth="100.0" text="Update" textFill="#519c56">
+      <font>
+         <Font name="System Bold" size="14.0" />
+      </font></Button>
+
+    <TableView fx:id="feedbackTable" layoutX="40.0" layoutY="300.0" prefHeight="200.0" prefWidth="760.0">
+        <columns>
+            <TableColumn fx:id="colTrainee" prefWidth="180.0" text="Trainee" />
+            <TableColumn fx:id="colSession" prefWidth="180.0" text="Session" />
+            <TableColumn fx:id="colRating" prefWidth="100.0" text="Rating" />
+            <TableColumn fx:id="colFeedback" prefWidth="300.0" text="Feedback" />
+        </columns>
+    </TableView>
+
+    <Button fx:id="returnHomeButton" layoutX="680.0" layoutY="510.0" onAction="#ReturnHomeButton" prefWidth="120.0" text="Return Home" textFill="#519c56">
+      <font>
+         <Font name="System Bold" size="14.0" />
+      </font></Button>
+
+</AnchorPane>

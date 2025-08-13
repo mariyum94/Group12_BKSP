@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.group12_bksp.Samayra.SwimmingTrainee8">
+   <children>
+      <Label fx:id="St8OutputLabel" layoutX="107.0" layoutY="316.0" prefHeight="61.0" prefWidth="228.0" />
+      <Label layoutX="169.0" layoutY="240.0" text="No file selected" textFill="#00000061">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="32.0" layoutY="191.0" text="Upload Race Video:" textFill="#0000007b">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="173.0" layoutY="14.0" text="Swim Meet Preparation" textFill="#c282c9">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Button layoutX="450.0" layoutY="343.0" mnemonicParsing="false" onAction="#ReturnHomeOnAction" text="Return Home" textFill="#b479b4">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button layoutX="144.0" layoutY="281.0" mnemonicParsing="false" onAction="#AnalyzeRacePerformanceButton" text="Analyze Performance" textFill="#ac6ca6">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button layoutX="172.0" layoutY="187.0" mnemonicParsing="false" onAction="#UploadRaceVidOnAction" text="Choose File" textFill="#ac6ca6">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <TableView fx:id="tableview8" layoutX="319.0" layoutY="64.0" prefHeight="200.0" prefWidth="262.0">
+        <columns>
+          <TableColumn prefWidth="75.0" text="Event name" />
+          <TableColumn prefWidth="75.0" text="Event Date" />
+            <TableColumn prefWidth="75.0" text="Best Time" />
+        </columns>
+      </TableView>
+      <Label layoutX="39.0" layoutY="123.0" text="Enter Timing:" textFill="#00000097">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Label>
+      <TextField fx:id="timingTextField" layoutX="137.0" layoutY="119.0" promptText=" (in seconds)" />
+   </children>
+</AnchorPane>
