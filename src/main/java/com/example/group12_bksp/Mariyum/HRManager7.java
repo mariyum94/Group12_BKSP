@@ -14,7 +14,7 @@ public class HRManager7 {
     private TextArea reportTextArea;
 
     @FXML
-    private ComboBox<?> reportTypeComboBox;
+    private ComboBox<String> reportTypeComboBox;
 
     @javafx.fxml.FXML
     public void initialize() {

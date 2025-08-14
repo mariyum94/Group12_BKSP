@@ -68,7 +68,7 @@ public class FinanceOfficer3 {
     }
 
 
-@javafx.fxml.FXML
+    @javafx.fxml.FXML
     public void loaddataButton(ActionEvent actionEvent) {
 //        try (BufferedReader reader = new BufferedReader(new FileReader("FinanceOfficer3/Mariyum.txt"))) {
 //            while(true) {
@@ -80,13 +80,13 @@ public class FinanceOfficer3 {
 //        catch (IOException e) {
 //            messageLabel.setText("Could not read from file!");
 //        }          // this one is not working
-    try {
-        logTableview.getItems().addAll(FinanceOfficer1.getFinanceOfficerModelClass1List());
-        messageLabel.setText("Data loaded from file successfully!");
-    }
-    catch (RuntimeException e) {
-        messageLabel.setText(e.getMessage());
-    }}
+        try {
+            logTableview.getItems().addAll(FinanceOfficer1.getFinanceOfficerModelClass1List());
+            messageLabel.setText("Data loaded from file successfully!");
+        }
+        catch (RuntimeException e) {
+            messageLabel.setText(e.getMessage());
+        }}
 
     @javafx.fxml.FXML
     public void returnToDashboardButton(ActionEvent actionEvent) throws IOException {
