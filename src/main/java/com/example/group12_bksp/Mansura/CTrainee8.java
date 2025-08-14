@@ -1,12 +1,12 @@
 package com.example.group12_bksp.Mansura;
 
-import javafx.collections.FXCollections;
-import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.*;
+import javafx.scene.control.cell.PropertyValueFactory;
 
 import java.time.LocalDate;
+import java.util.ArrayList;
 
 public class CTrainee8 {
 
@@ -33,29 +33,56 @@ public class CTrainee8 {
     @FXML
     private TableColumn<CTraineemodel8, String> summaryColumn;
 
-    private ObservableList<CTraineemodel8> matchResultsList = FXCollections.observableArrayList();
+    // Use ArrayList instead of ObservableList
+    private ArrayList<CTraineemodel8> matchResultsList = new ArrayList<>();
 
     @FXML
     public void initialize() {
-        matchDateColumn.setCellValueFactory(new javafx.scene.control.cell.PropertyValueFactory<>("matchDate"));
-        opponentColumn.setCellValueFactory(new javafx.scene.control.cell.PropertyValueFactory<>("opponent"));
-        matchTypeColumn.setCellValueFactory(new javafx.scene.control.cell.PropertyValueFactory<>("matchType"));
-        resultColumn.setCellValueFactory(new javafx.scene.control.cell.PropertyValueFactory<>("result"));
-        scoreColumn.setCellValueFactory(new javafx.scene.control.cell.PropertyValueFactory<>("score"));
-        summaryColumn.setCellValueFactory(new javafx.scene.control.cell.PropertyValueFactory<>("summary"));
+        matchDateColumn.setCellValueFactory(new PropertyValueFactory<>("matchDate"));
+        opponentColumn.setCellValueFactory(new PropertyValueFactory<>("opponent"));
+        matchTypeColumn.setCellValueFactory(new PropertyValueFactory<>("matchType"));
+        resultColumn.setCellValueFactory(new PropertyValueFactory<>("result"));
+        scoreColumn.setCellValueFactory(new PropertyValueFactory<>("score"));
+        summaryColumn.setCellValueFactory(new PropertyValueFactory<>("summary"));
 
         // Add example data
-        matchResultsList.addAll(
-                new CTraineemodel8(LocalDate.of(2025, 8, 14), "Team A", "Home", "Win", "3-1", "Good performance"),
-                new CTraineemodel8(LocalDate.of(2025, 8, 10), "Team B", "Away", "Lose", "0-2", "Poor defense")
-        );
+        matchResultsList.add(new CTraineemodel8(LocalDate.of(2025, 8, 14), "Team A", "Home", "Win", "3-1", "Good performance"));
+        matchResultsList.add(new CTraineemodel8(LocalDate.of(2025, 8, 10), "Team B", "Away", "Lose", "0-2", "Poor defense"));
 
-        matchResultsTable.setItems(matchResultsList);
+        // Populate TableView from ArrayList
+        matchResultsTable.getItems().addAll(matchResultsList);
     }
 
     @FXML
     public void loadResults(ActionEvent actionEvent) {
-        // Refresh TableView if needed
+        // Clear and reload TableView from ArrayList
+        matchResultsTable.getItems().clear();
+        matchResultsTable.getItems().addAll(matchResultsList);
         matchResultsTable.refresh();
+    }
+
+    // Optional: add method to add new match result to ArrayList
+    @FXML
+    public void addMatchResult(ActionEvent actionEvent) {
+        if (matchDatePicker.getValue() != null && !opponentTextField.getText().isEmpty()) {
+            String matchType = homeRadio.isSelected() ? "Home" : "Away";
+            // Default placeholders for result, score, summary
+            CTraineemodel8 newMatch = new CTraineemodel8(
+                    matchDatePicker.getValue(),
+                    opponentTextField.getText(),
+                    matchType,
+                    "Pending",
+                    "-",
+                    "-"
+            );
+            matchResultsList.add(newMatch);
+            matchResultsTable.getItems().add(newMatch);
+
+            // Clear input fields
+            matchDatePicker.setValue(null);
+            opponentTextField.clear();
+            homeRadio.setSelected(false);
+            awayRadio.setSelected(false);
+        }
     }
 }
