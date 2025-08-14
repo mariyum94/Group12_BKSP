@@ -11,13 +11,14 @@ import java.io.IOException;
 public class HRManager5 {
 
     @FXML
-    private ComboBox<?> employeeComboBox;
+    private ComboBox<String> employeeComboBox;
 
     @FXML
     private Label massagelabel;
 
     @javafx.fxml.FXML
     public void initialize() {
+        employeeComboBox.getItems().addAll("Cricket Coach ", "trainee", "Event Coordinator", "Cricket Trainee");
     }
 
     @FXML
@@ -26,7 +27,13 @@ public class HRManager5 {
     }
     @FXML
     void sendnotificationButton(ActionEvent event) {
+        String Employee = employeeComboBox.getValue();
 
-    }
+        if (Employee == null) {
+            massagelabel.setText("Please select an employee to notify.");
+        } else {
+            // You can add actual notification logic here
+            massagelabel.setText("Notification sent to " + Employee + ".");
+        }
 
-}
+}}
