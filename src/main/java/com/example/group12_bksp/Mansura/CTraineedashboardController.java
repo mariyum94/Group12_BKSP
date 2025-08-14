@@ -6,10 +6,7 @@ import java.io.IOException;
 
 public class CTraineedashboardController {
 
-    @javafx.fxml.FXML
-    public void initialize() {
-        // Any initialization logic goes here
-    }
+
 
     @javafx.fxml.FXML
     public void viewmonthlyattendancebutton(ActionEvent actionEvent) throws IOException {

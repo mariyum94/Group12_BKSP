@@ -46,10 +46,10 @@ public class CTrainee5 {
 
     @FXML
     public void initialize() {
-        // Coach ComboBox
+
         coachComboBox.setItems(FXCollections.observableArrayList("Coach A", "Coach B", "Coach C"));
 
-        // Table columns
+
         sessionDateColumn.setCellValueFactory(data ->
                 new javafx.beans.property.SimpleStringProperty(
                         data.getValue().getDate().format(DateTimeFormatter.ISO_DATE)

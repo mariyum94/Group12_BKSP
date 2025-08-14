@@ -26,11 +26,6 @@ public class EventC4 {
         emailColumn.setCellValueFactory(new PropertyValueFactory<>("email"));
         statusColumn.setCellValueFactory(new PropertyValueFactory<>("status"));
 
-        // Example data
-        participantstable.getItems().addAll(
-                new EventCmodel2(1, "Alice", "alice@example.com", "Pending"),
-                new EventCmodel2(2, "Bob", "bob@example.com", "Approved")
-        );
     }
 
     @FXML

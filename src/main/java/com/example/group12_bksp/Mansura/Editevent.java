@@ -1,13 +1,13 @@
 package com.example.group12_bksp.Mansura;
 
-import javafx.collections.FXCollections;
-import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
 
 import java.time.LocalDate;
+import java.util.ArrayList;
+import java.util.List;
 
 public class Editevent {
 
@@ -33,7 +33,7 @@ public class Editevent {
     @FXML
     private DatePicker eventdateDP;
 
-    private ObservableList<EventCmodel1> eventList = FXCollections.observableArrayList();
+    private List<EventCmodel1> eventList = new ArrayList<>();
 
     @FXML
     public void initialize() {
@@ -45,12 +45,11 @@ public class Editevent {
         coleventvenue.setCellValueFactory(new PropertyValueFactory<>("eventVenue"));
 
         // Sample data
-        eventList.addAll(
-                new EventCmodel1("Event1", 1, LocalDate.of(2025, 8, 15), "10:00", "Hall A"),
-                new EventCmodel1("Event2", 2, LocalDate.of(2025, 8, 16), "12:00", "Hall B")
-        );
+        eventList.add(new EventCmodel1("Event1", 1, LocalDate.of(2025, 8, 15), "10:00", "Hall A"));
+        eventList.add(new EventCmodel1("Event2", 2, LocalDate.of(2025, 8, 16), "12:00", "Hall B"));
 
-        eventtable.setItems(eventList);
+        // Load ArrayList into TableView
+        eventtable.getItems().setAll(eventList);
     }
 
     @FXML
@@ -72,7 +71,9 @@ public class Editevent {
             selected.setEventTime(eventtimeTF.getText());
             selected.setEventVenue(eventvenueTF.getText());
             selected.setEventDate(eventdateDP.getValue());
-            eventtable.refresh();
+
+            // Refresh TableView from ArrayList
+            eventtable.getItems().setAll(eventList);
         }
     }
 
@@ -85,4 +86,5 @@ public class Editevent {
         eventtable.getSelectionModel().clearSelection();
     }
 }
+
 

@@ -8,6 +8,9 @@ import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Viewevent {
 
     @FXML
@@ -28,7 +31,7 @@ public class Viewevent {
     @FXML
     private Button onRefreshEvents, onBack;
 
-    private ObservableList<EventCmodel5> eventsList = FXCollections.observableArrayList();
+    private List<EventCmodel5> eventsList = new ArrayList<>();
 
     @FXML
     public void initialize() {
@@ -38,7 +41,7 @@ public class Viewevent {
         colEventTime.setCellValueFactory(new PropertyValueFactory<>("eventTime"));
         colVenue.setCellValueFactory(new PropertyValueFactory<>("eventVenue"));
 
-        // Load initial sample data
+
         loadSampleEvents();
     }
 
@@ -47,20 +50,23 @@ public class Viewevent {
         eventsList.add(new EventCmodel5("Tech Talk", "2025-08-20", "10:00 AM", "Auditorium"));
         eventsList.add(new EventCmodel5("Workshop", "2025-08-22", "2:00 PM", "Lab 5"));
         eventsList.add(new EventCmodel5("Seminar", "2025-08-25", "11:00 AM", "Conference Hall"));
-        eventTable.setItems(eventsList);
+
+
+        eventTable.getItems().setAll(eventsList);
     }
 
     @FXML
     private void onRefreshEvents() {
-        // Normally reload from database, here reload sample data
-        loadSampleEvents();
+
+        eventTable.getItems().setAll(eventsList);
     }
 
     @FXML
     private void onBack() {
-        // Implement back navigation logic
+
         System.out.println("Back button pressed");
     }
 }
+
 
 
