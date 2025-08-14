@@ -1,30 +1,61 @@
 package com.example.group12_bksp.Mansura;
 
+import com.example.group12_bksp.SceneSwitcher;
 import javafx.event.ActionEvent;
+import javafx.fxml.FXML;
+import javafx.scene.control.DatePicker;
 import javafx.scene.control.Label;
+import javafx.scene.control.TextField;
 
-public class Createevent
-{
-    @javafx.fxml.FXML
+import java.io.IOException;
+import java.time.LocalDate;
+
+public class Createevent {
+
+    @FXML
+    private TextField eventNameField;
+
+    @FXML
+    private TextField eventTimeField;
+
+    @FXML
+    private TextField venueField;
+
+    @FXML
+    private DatePicker eventDatePicker;
+
+    @FXML
     private Label statuslabel;
 
-    @javafx.fxml.FXML
+    @FXML
     public void initialize() {
+        eventDatePicker.setValue(LocalDate.now()); // default to today's date
+        statuslabel.setText(""); // clear status label on load
     }
 
-    @javafx.fxml.FXML
-    public void venueField(ActionEvent actionEvent) {
+    @FXML
+    public void handleCreateEvent(ActionEvent actionEvent) {
+        String name = eventNameField.getText();
+        String time = eventTimeField.getText();
+        String venue = venueField.getText();
+        LocalDate date = eventDatePicker.getValue();
+
+        if (name.isEmpty() || time.isEmpty() || venue.isEmpty() || date == null) {
+            statuslabel.setText("Please fill all fields!");
+            return;
+        }
+
+        // Saving logic to DB or file would go here
+        statuslabel.setText("Event created successfully!");
     }
 
-    @javafx.fxml.FXML
-    public void eventNameField(ActionEvent actionEvent) {
+    @FXML
+    public void goBack(ActionEvent actionEvent) throws IOException {
+        SceneSwitcher.switchTo("EventCdashboard.fxml", actionEvent);
     }
 
-    @javafx.fxml.FXML
-    public void eventTimeField(ActionEvent actionEvent) {
-    }
-
-    @javafx.fxml.FXML
-    public void eventDatePicker(ActionEvent actionEvent) {
+    @FXML
+    public void logOut(ActionEvent actionEvent) throws IOException {
+        SceneSwitcher.switchTo("login.fxml", actionEvent);
     }
 }
