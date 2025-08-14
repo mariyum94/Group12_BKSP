@@ -4,26 +4,24 @@ import javafx.event.ActionEvent;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 
-public class CTrainee1
+public class CTrainee7
 {
     @javafx.fxml.FXML
-    private TableColumn timeColumn;
+    private TableColumn positionColumn;
     @javafx.fxml.FXML
-    private TableColumn sessionTypeColumn;
+    private TableColumn jerseyColumn;
     @javafx.fxml.FXML
-    private TableColumn locationColumn;
+    private TableView teamTable;
     @javafx.fxml.FXML
-    private TableColumn coachColumn;
+    private TableColumn roleColumn;
     @javafx.fxml.FXML
-    private TableView scheduleTable;
-    @javafx.fxml.FXML
-    private TableColumn dateColumn;
+    private TableColumn playerNameColumn;
 
     @javafx.fxml.FXML
     public void initialize() {
     }
 
     @javafx.fxml.FXML
-    public void handleMySchedule(ActionEvent actionEvent) {
+    public void handleLoadTeam(ActionEvent actionEvent) {
     }
 }

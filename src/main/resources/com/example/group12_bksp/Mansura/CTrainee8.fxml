@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.example.group12_bksp.Mansura.CTrainee8"
+            prefWidth="900.0" prefHeight="650.0">
+
+    <!-- Title -->
+    <Label text="Match Results" layoutX="20.0" layoutY="20.0"
+           style="-fx-font-size: 24px; -fx-font-weight: bold;"/>
+
+    <!-- TextField for filtering by Opponent -->
+    <Label text="Opponent:" layoutX="20.0" layoutY="70.0"/>
+    <TextField fx:id="opponentTextField" layoutX="100.0" layoutY="65.0" prefWidth="200.0"/>
+
+    <!-- RadioButtons for Match Type -->
+    <Label text="Match Type:" layoutX="320.0" layoutY="70.0"/>
+    <RadioButton fx:id="homeRadio" text="Home" layoutX="400.0" layoutY="65.0"/>
+    <RadioButton fx:id="awayRadio" text="Away" layoutX="480.0" layoutY="65.0"/>
+
+    <!-- DatePicker for filtering by Date -->
+    <Label text="Match Date:" layoutX="580.0" layoutY="70.0"/>
+    <DatePicker fx:id="matchDatePicker" layoutX="670.0" layoutY="65.0"/>
+
+    <!-- Button to load results -->
+    <Button text="View Match Results" layoutX="20.0" layoutY="110.0" prefWidth="180.0"
+            onAction="#handleLoadResults"/>
+
+    <!-- TableView to display match results -->
+    <TableView fx:id="matchResultsTable" layoutX="20.0" layoutY="160.0"
+               prefWidth="860.0" prefHeight="470.0">
+        <columns>
+            <TableColumn fx:id="matchDateColumn" text="Date" prefWidth="150.0"/>
+            <TableColumn fx:id="opponentColumn" text="Opponent" prefWidth="200.0"/>
+            <TableColumn fx:id="matchTypeColumn" text="Type" prefWidth="100.0"/>
+            <TableColumn fx:id="resultColumn" text="Result" prefWidth="150.0"/>
+            <TableColumn fx:id="scoreColumn" text="Score" prefWidth="200.0"/>
+            <TableColumn fx:id="summaryColumn" text="Summary" prefWidth="160.0"/>
+        </columns>
+    </TableView>
+
+</AnchorPane>
+
