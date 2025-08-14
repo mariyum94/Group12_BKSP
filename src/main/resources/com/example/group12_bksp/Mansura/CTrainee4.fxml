@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="486.0" prefWidth="721.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.group12_bksp.Mansura.CTrainee4">
+   <children>
+      <Label layoutX="282.0" layoutY="36.0" prefHeight="46.0" prefWidth="190.0" text="Coach Feedback" textFill="#e70707">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Button layoutX="246.0" layoutY="108.0" mnemonicParsing="false" onAction="#handleLoadFeedback" prefHeight="26.0" prefWidth="232.0" text="Coach Feedback" />
+      <TableView fx:id="feedbackTable" layoutX="217.0" layoutY="158.0" prefHeight="200.0" prefWidth="336.0">
+        <columns>
+          <TableColumn fx:id="dateColumn" prefWidth="107.19999694824219" text="Date" />
+          <TableColumn fx:id="coachColumn" prefWidth="92.0" text="Coach" />
+            <TableColumn fx:id="commentColumn" prefWidth="136.0" text="Feedback" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

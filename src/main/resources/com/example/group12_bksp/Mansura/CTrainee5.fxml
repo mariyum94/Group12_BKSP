@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.example.group12_bksp.Mansura.CTrainee5"
+            prefWidth="900" prefHeight="650">
+
+    <!-- Title -->
+    <Label text="Request Coaching Session"
+           layoutX="20" layoutY="20"
+           style="-fx-font-size: 24px; -fx-font-weight: bold;" />
+
+    <!-- Date Picker -->
+    <Label text="Select Date:" layoutX="20" layoutY="70" />
+    <DatePicker fx:id="datePicker" layoutX="120" layoutY="65" />
+
+    <!-- Coach ComboBox -->
+    <Label text="Select Coach:" layoutX="20" layoutY="110" />
+    <ComboBox fx:id="coachComboBox" layoutX="120" layoutY="105" prefWidth="200" />
+
+    <!-- Time Slot Radio Buttons -->
+    <Label text="Select Time:" layoutX="20" layoutY="150" />
+    <RadioButton fx:id="morningRadio" text="Morning" layoutX="120" layoutY="145" />
+    <RadioButton fx:id="afternoonRadio" text="Afternoon" layoutX="220" layoutY="145" />
+    <RadioButton fx:id="eveningRadio" text="Evening" layoutX="340" layoutY="145" />
+
+    <!-- Session Type CheckBoxes -->
+    <Label text="Session Type:" layoutX="20" layoutY="190" />
+    <CheckBox fx:id="battingCheckBox" text="Batting" layoutX="120" layoutY="185" />
+    <CheckBox fx:id="bowlingCheckBox" text="Bowling" layoutX="220" layoutY="185" />
+    <CheckBox fx:id="fitnessCheckBox" text="Fitness" layoutX="320" layoutY="185" />
+
+    <!-- Filter Field -->
+    <Label text="Filter Sessions:" layoutX="20" layoutY="230" />
+    <TextField fx:id="filterField" layoutX="120" layoutY="225" prefWidth="200"
+               promptText="Type to filter..." onKeyReleased="#handleFilterSessions" />
+
+    <!-- Available Sessions Table -->
+    <TableView fx:id="sessionTable" layoutX="20" layoutY="270" prefWidth="860" prefHeight="300">
+        <columns>
+            <TableColumn fx:id="sessionDateColumn" text="Date" prefWidth="150"/>
+            <TableColumn fx:id="sessionTimeColumn" text="Time" prefWidth="150"/>
+            <TableColumn fx:id="sessionCoachColumn" text="Coach" prefWidth="200"/>
+            <TableColumn fx:id="sessionTypeColumn" text="Type" prefWidth="200"/>
+            <TableColumn fx:id="availabilityColumn" text="Available" prefWidth="160"/>
+        </columns>
+    </TableView>
+
+    <!-- Submit Button -->
+    <Button text="Request Session" layoutX="20" layoutY="590" prefWidth="150"
+            onAction="#handleRequestSession" />
+
+    <!-- Confirmation Label -->
+    <Label fx:id="confirmationLabel"
+           layoutX="200" layoutY="595"
+           style="-fx-font-size: 14px; -fx-text-fill: green;" />
+
+</AnchorPane>
