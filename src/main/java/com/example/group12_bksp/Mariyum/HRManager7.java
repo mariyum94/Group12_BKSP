@@ -18,11 +18,18 @@ public class HRManager7 {
 
     @javafx.fxml.FXML
     public void initialize() {
-    }
+            reportTypeComboBox.getItems().addAll("Attendance", "Leave", "Performance ");
+        }
 
     @FXML
     void generateReportButton(ActionEvent event) {
+        String report = reportTypeComboBox.getValue();
 
+        if (report == null) {
+            reportTextArea.setText("Please select a report type..");
+        } else {
+            reportTextArea.setText("Unknown report type selected " + report + ".");
+        }
     }
 
     @FXML
