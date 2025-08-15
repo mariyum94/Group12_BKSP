@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="556.0" prefWidth="820.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.group12_bksp.ROMTAHENA.DirectorGeneral3">
+
+    <Label layoutX="335.0" layoutY="20.0" prefHeight="26.0" prefWidth="175.0" style="-fx-font-size:20px; -fx-font-weight:bold;" text="Budget Allocation" textFill="#519c56">
+      <font>
+         <Font name="System Bold" size="23.0" />
+      </font></Label>
+
+    <Label layoutX="40.0" layoutY="80.0" text="Department:" />
+    <ComboBox fx:id="departmentComboBox" layoutX="150.0" layoutY="75.0" prefWidth="250.0" promptText="Select department..." />
+
+    <Label layoutX="40.0" layoutY="120.0" text="Budget Amount:" />
+    <TextField fx:id="budgetAmountField" layoutX="150.0" layoutY="115.0" prefWidth="250.0" />
+
+    <Label layoutX="40.0" layoutY="160.0" text="Date Assigned:" />
+    <DatePicker fx:id="dateAssignedPicker" layoutX="150.0" layoutY="155.0" prefWidth="200.0" />
+
+    <Button layoutX="40.0" layoutY="510.0" onAction="#AllocateBudgetButton" prefWidth="100.0" text="Allocate" textFill="#519c56">
+      <font>
+         <Font name="System Bold" size="14.0" />
+      </font></Button>
+
+    <Button layoutX="150.0" layoutY="510.0" onAction="#UpdateBudgetButton" prefWidth="100.0" text="Update" textFill="#519c56">
+      <font>
+         <Font name="System Bold" size="14.0" />
+      </font></Button>
+
+    <TableView fx:id="budgetTable" layoutX="40.0" layoutY="220.0" prefHeight="280.0" prefWidth="760.0">
+        <columns>
+            <TableColumn fx:id="colDepartment" prefWidth="250.0" text="Department" />
+            <TableColumn fx:id="colAmount" prefWidth="200.0" text="Amount" />
+            <TableColumn fx:id="colDate" prefWidth="310.0" text="Date" />
+        </columns>
+    </TableView>
+
+    <Button layoutX="680.0" layoutY="510.0" onAction="#ReturnHomeButton" prefWidth="120.0" text="Return Home" textFill="#519c56">
+      <font>
+         <Font name="System Bold" size="14.0" />
+      </font></Button>
+
+</AnchorPane>

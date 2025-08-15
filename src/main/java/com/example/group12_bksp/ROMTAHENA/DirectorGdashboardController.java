@@ -19,27 +19,27 @@ public class DirectorGdashboardController
     }
 
     @javafx.fxml.FXML
-    public void GenerateReportButton(ActionEvent actionEvent) throws IOException {
+    public void AssignBudgetButton(ActionEvent actionEvent) throws IOException {
         SceneSwitcher.switchTo("/com/example/group12_bksp/ROMTAHENA/DirectorGeneral3.fxml", actionEvent);
     }
 
     @javafx.fxml.FXML
-    public void RecruitCoachesButton(ActionEvent actionEvent) throws IOException {
+    public void GenerateReportButton(ActionEvent actionEvent) throws IOException {
         SceneSwitcher.switchTo("/com/example/group12_bksp/ROMTAHENA/DirectorGeneral4.fxml", actionEvent);
     }
 
     @javafx.fxml.FXML
-    public void ApproveTournamentButton(ActionEvent actionEvent) throws IOException {
+    public void RecruitCoachesButton(ActionEvent actionEvent) throws IOException {
         SceneSwitcher.switchTo("/com/example/group12_bksp/ROMTAHENA/DirectorGeneral5.fxml", actionEvent);
     }
 
     @javafx.fxml.FXML
-    public void EvaluatePerformanceButton(ActionEvent actionEvent) throws IOException {
+    public void ApproveTournamentButton(ActionEvent actionEvent) throws IOException {
         SceneSwitcher.switchTo("/com/example/group12_bksp/ROMTAHENA/DirectorGeneral6.fxml", actionEvent);
     }
 
     @javafx.fxml.FXML
-    public void AssignBudgetButton(ActionEvent actionEvent) throws IOException {
+    public void EvaluatePerformanceButton(ActionEvent actionEvent) throws IOException {
         SceneSwitcher.switchTo("/com/example/group12_bksp/ROMTAHENA/DirectorGeneral7.fxml", actionEvent);
     }
 
