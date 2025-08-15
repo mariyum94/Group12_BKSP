@@ -13,6 +13,9 @@ import java.time.LocalDate;
 public class Createevent {
 
     @FXML
+    private Label statuslabel;
+
+    @FXML
     private TextField eventNameField;
 
     @FXML
@@ -25,12 +28,9 @@ public class Createevent {
     private DatePicker eventDatePicker;
 
     @FXML
-    private Label statuslabel;
-
-    @FXML
     public void initialize() {
-        eventDatePicker.setValue(LocalDate.now()); // default to today's date
-        statuslabel.setText(""); // clear status label on load
+        eventDatePicker.setValue(LocalDate.now()); // default date
+        statuslabel.setText(""); // clear status
     }
 
     @FXML
@@ -45,7 +45,7 @@ public class Createevent {
             return;
         }
 
-        // Saving logic to DB or file would go here
+        // Saving logic to DB or file
         statuslabel.setText("Event created successfully!");
     }
 
@@ -59,3 +59,4 @@ public class Createevent {
         SceneSwitcher.switchTo("login.fxml", actionEvent);
     }
 }
+
