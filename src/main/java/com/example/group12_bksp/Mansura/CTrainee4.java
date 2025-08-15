@@ -7,6 +7,7 @@ import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
 
 import java.time.LocalDate;
+import java.util.ArrayList;
 
 public class CTrainee4 {
 
@@ -22,25 +23,32 @@ public class CTrainee4 {
     @FXML
     private TableColumn<CTraineemodel4, String> commentColumn;
 
+    // Static ArrayList to store feedback
+    static ArrayList<CTraineemodel4> CTraineemodel4list = new ArrayList<>();
+
     @FXML
     public void initialize() {
-        // Bind table columns to model properties
+        // Map TableView columns to model properties
         dateColumn.setCellValueFactory(new PropertyValueFactory<>("date"));
         coachColumn.setCellValueFactory(new PropertyValueFactory<>("coach"));
         commentColumn.setCellValueFactory(new PropertyValueFactory<>("comment"));
 
-        // Sample data to display in the table
-        feedbackTable.getItems().addAll(
-                new CTraineemodel4(LocalDate.of(2025, 8, 10), "Coach A", "Good progress."),
-                new CTraineemodel4(LocalDate.of(2025, 8, 11), "Coach B", "Needs improvement."),
-                new CTraineemodel4(LocalDate.of(2025, 8, 12), "Coach A", "Excellent performance.")
-        );
+        // Load existing feedback
+        feedbackTable.getItems().addAll(CTraineemodel4list);
     }
 
     @FXML
     private void handleLoadFeedback(ActionEvent event) {
-        System.out.println("Load Feedback button clicked");
-        // You can replace this with logic to load feedback from a database or file
+        // If list is empty, add sample feedback
+        if (CTraineemodel4list.isEmpty()) {
+            CTraineemodel4list.add(new CTraineemodel4(LocalDate.of(2025, 8, 1), "Coach A", "Good effort"));
+            CTraineemodel4list.add(new CTraineemodel4(LocalDate.of(2025, 8, 2), "Coach B", "Needs improvement"));
+            CTraineemodel4list.add(new CTraineemodel4(LocalDate.of(2025, 8, 3), "Coach A", "Excellent performance"));
+        }
+
+        // Refresh TableView
+        feedbackTable.getItems().setAll(CTraineemodel4list);
     }
 }
+
 

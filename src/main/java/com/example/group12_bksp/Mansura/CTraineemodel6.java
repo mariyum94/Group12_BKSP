@@ -1,5 +1,6 @@
 package com.example.group12_bksp.Mansura;
 
+import javafx.scene.control.Button;
 import java.time.LocalDate;
 
 public class CTraineemodel6 {
@@ -8,16 +9,16 @@ public class CTraineemodel6 {
     private String time;
     private String coach;
     private String notes;
+    private Button downloadButton; // Download button field
 
-    // Constructor
     public CTraineemodel6(LocalDate date, String time, String coach, String notes) {
         this.date = date;
         this.time = time;
         this.coach = coach;
         this.notes = notes;
+        this.downloadButton = new Button("Download"); // Button initialization
     }
 
-    // Getters and Setters
     public LocalDate getDate() {
         return date;
     }
@@ -48,6 +49,14 @@ public class CTraineemodel6 {
 
     public void setNotes(String notes) {
         this.notes = notes;
+    }
+
+    public Button getDownloadButton() {
+        return downloadButton;
+    }
+
+    public void setDownloadButton(Button downloadButton) {
+        this.downloadButton = downloadButton;
     }
 
     @Override
