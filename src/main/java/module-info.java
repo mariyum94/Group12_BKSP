@@ -14,4 +14,5 @@ module com.example.group12_bksp {
     exports com.example.group12_bksp.Mariyum;
     exports com.example.group12_bksp.ROMTAHENA;
     exports com.example.group12_bksp.Samayra;
+
 }
