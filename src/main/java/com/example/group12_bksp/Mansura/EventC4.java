@@ -1,9 +1,12 @@
 package com.example.group12_bksp.Mansura;
 
+import com.example.group12_bksp.SceneSwitcher;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
+
+import java.io.IOException;
 
 public class EventC4 {
 
@@ -46,8 +49,7 @@ public class EventC4 {
     }
 
     @FXML
-    public void backToDashboard(ActionEvent actionEvent) {
-        // Implement scene switch if needed
-        System.out.println("Back button clicked");
+    public void backToDashboard(ActionEvent actionEvent) throws IOException {
+        SceneSwitcher.switchTo("/com/example/group12_bksp/Mansura/Dashboard.fxml", actionEvent);
     }
 }
