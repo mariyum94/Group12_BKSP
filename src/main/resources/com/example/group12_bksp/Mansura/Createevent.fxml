@@ -1,18 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.control.Button?>
 <?import javafx.scene.control.DatePicker?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
-<AnchorPane prefHeight="400.0" prefWidth="708.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.group12_bksp.Mansura.Createevent">
+<fx:root prefHeight="400.0" prefWidth="708.0" type="AnchorPane" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.group12_bksp.Mansura.Createevent">
    <children>
-      <TextField layoutX="164.0" layoutY="122.0" onAction="#eventNameField" />
-      <TextField layoutX="164.0" layoutY="187.0" onAction="#eventTimeField" />
-      <TextField layoutX="164.0" layoutY="237.0" onAction="#venueField" />
-      <DatePicker layoutX="487.0" layoutY="122.0" onAction="#eventDatePicker" />
+      <TextField fx:id="VenueTextField" layoutX="164.0" layoutY="187.0" />
+      <TextField fx:id="TimeTextField" layoutX="164.0" layoutY="237.0" />
+      <DatePicker fx:id="eventDatePicker" layoutX="487.0" layoutY="122.0" />
       <Label layoutX="28.0" layoutY="126.0" prefHeight="18.0" prefWidth="129.0" />
       <Label layoutX="28.0" layoutY="191.0" />
       <Label layoutX="28.0" layoutY="250.0" text="eventTime" />
@@ -25,5 +24,7 @@
       <Label layoutX="372.0" layoutY="126.0" prefHeight="18.0" prefWidth="100.0" text="eventDate" />
       <Label layoutX="28.0" layoutY="127.0" text="eventName" />
       <Label layoutX="28.0" layoutY="191.0" prefHeight="18.0" prefWidth="82.0" text="  eventvenue" />
+      <TextField fx:id="NameTextField" layoutX="165.0" layoutY="123.0" />
+      <Button layoutX="461.0" layoutY="314.0" mnemonicParsing="false" onAction="#addhandleonaction" prefHeight="26.0" prefWidth="175.0" text="Create" />
    </children>
-</AnchorPane>
+</fx:root>
