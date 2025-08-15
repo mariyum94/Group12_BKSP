@@ -8,7 +8,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="589.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.group12_bksp.Samayra.Physiotherapist1">
+<AnchorPane prefHeight="645.0" prefWidth="866.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.group12_bksp.Samayra.Physiotherapist1">
    <children>
       <Label layoutX="269.0" layoutY="25.0" prefHeight="28.0" prefWidth="238.0" text="Injury Assessment " textFill="#b16aae">
          <font>
@@ -48,8 +48,8 @@
             <Font name="System Bold" size="13.0" />
          </font>
       </Button>
-      <Label fx:id="OutputLabel" layoutX="289.0" layoutY="411.0" prefHeight="52.0" prefWidth="221.0" />
-      <TableView fx:id="listviewPhysio1" layoutX="32.0" layoutY="252.0" prefHeight="259.0" prefWidth="701.0">
+      <Label fx:id="OutputLabel" layoutX="160.0" layoutY="566.0" prefHeight="68.0" prefWidth="482.0" />
+      <TableView fx:id="listviewPhysio1" layoutX="37.0" layoutY="241.0" prefHeight="259.0" prefWidth="701.0">
         <columns>
           <TableColumn fx:id="nameCol1" prefWidth="200.0" text="Name" />
           <TableColumn fx:id="injuryCol1" prefWidth="200.0" text="Injury type" />
@@ -58,5 +58,10 @@
         </columns>
       </TableView>
       <TextField fx:id="nameTF" layoutX="165.0" layoutY="84.0" />
+      <Button layoutX="108.0" layoutY="523.0" mnemonicParsing="false" onAction="#EditinjuryButton" prefHeight="31.0" prefWidth="150.0" text="Edit" textFill="#b16aae">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Button>
    </children>
 </AnchorPane>
