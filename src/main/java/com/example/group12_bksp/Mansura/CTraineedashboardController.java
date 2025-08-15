@@ -52,4 +52,5 @@ public class CTraineedashboardController {
     public void registerbutton(ActionEvent actionEvent) throws IOException {
         SceneSwitcher.switchTo("register.fxml", actionEvent);
     }//CTrainee2
+
 }
