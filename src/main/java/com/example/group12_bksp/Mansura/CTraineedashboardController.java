@@ -10,47 +10,46 @@ public class CTraineedashboardController {
 
     @javafx.fxml.FXML
     public void viewmonthlyattendancebutton(ActionEvent actionEvent) throws IOException {
-        SceneSwitcher.switchTo("monthlyAttendance.fxml", actionEvent);
-    }//CTrainee3
+        SceneSwitcher.switchTo("/com/example/group12_bksp/Mansura/CTrainee3.fxml", actionEvent);
+    }
 
     @javafx.fxml.FXML
     public void requestcoachingsessionbutton(ActionEvent actionEvent) throws IOException {
-        SceneSwitcher.switchTo("coachingSessionRequest.fxml", actionEvent);
-    }//CTrainee5
+        SceneSwitcher.switchTo("/com/example/group12_bksp/Mansura/CTrainee5.fxml", actionEvent);
+    }
 
     @javafx.fxml.FXML
     public void downloadcertificatebutton(ActionEvent actionEvent) throws IOException {
-        SceneSwitcher.switchTo("downloadCertificate.fxml", actionEvent);
-    }//CTrainee6
+        SceneSwitcher.switchTo("/com/example/group12_bksp/Mansura/CTrainee6.fxml", actionEvent);
+    }
 
     @javafx.fxml.FXML
     public void checkteamassignmentbutton(ActionEvent actionEvent) throws IOException {
-        SceneSwitcher.switchTo("teamAssignment.fxml", actionEvent);
-    }//CTrainee7
+        SceneSwitcher.switchTo("/com/example/group12_bksp/Mansura/CTrainee7.fxml", actionEvent);
+    }
 
     @javafx.fxml.FXML
     public void viewtrainingschedulebutton(ActionEvent actionEvent) throws IOException {
-        SceneSwitcher.switchTo("trainingSchedule.fxml", actionEvent);
-    }//CTrainee1
+        SceneSwitcher.switchTo("/com/example/group12_bksp/Mansura/CTrainee1.fxml", actionEvent);
+    }
 
     @javafx.fxml.FXML
     public void viewcoachfeedbackbutton(ActionEvent actionEvent) throws IOException {
-        SceneSwitcher.switchTo("coachFeedback.fxml", actionEvent);
-    }//CTrainee4
+        SceneSwitcher.switchTo("/com/example/group12_bksp/Mansura/CTrainee4.fxml", actionEvent);
+    }
 
     @javafx.fxml.FXML
     public void viewmatchresultsbutton(ActionEvent actionEvent) throws IOException {
-        SceneSwitcher.switchTo("matchResults.fxml", actionEvent);
-    }//CTrainee8
+        SceneSwitcher.switchTo("/com/example/group12_bksp/Mansura/CTrainee8.fxml", actionEvent);
+    }
 
     @javafx.fxml.FXML
     public void logoutbutton(ActionEvent actionEvent) throws IOException {
-        SceneSwitcher.switchTo("login.fxml", actionEvent);
+        SceneSwitcher.switchTo("/com/example/group12_bksp/Login.fxml", actionEvent);
     }
 
     @javafx.fxml.FXML
     public void registerbutton(ActionEvent actionEvent) throws IOException {
-        SceneSwitcher.switchTo("register.fxml", actionEvent);
-    }//CTrainee2
-
+        SceneSwitcher.switchTo("/com/example/group12_bksp/Mansura/CTrainee2.fxml", actionEvent);
+    }
 }

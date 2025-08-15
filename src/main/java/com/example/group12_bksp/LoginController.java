@@ -24,6 +24,7 @@ public class LoginController {
     private final String FinanceOfficerpassword = "1234";
     private final String HRManagerID = "HRManager";
     private final String HRManagerpassword = "1234";
+
     //mansura
     private final String EventCoordinatorID = "EventCoordinator";
     private final String EventCoordinatorpassword = "EventC";
