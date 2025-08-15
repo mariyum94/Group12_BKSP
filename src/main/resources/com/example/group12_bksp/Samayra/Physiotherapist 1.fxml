@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="589.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.group12_bksp.Samayra.Physiotherapist1">
+   <children>
+      <Label layoutX="269.0" layoutY="25.0" prefHeight="28.0" prefWidth="238.0" text="Injury Assessment " textFill="#b16aae">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="392.0" layoutY="136.0" text="Remarks:" textFill="#0000008b">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="59.0" layoutY="136.0" text="Severity:" textFill="#00000086">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="388.0" layoutY="88.0" text="Injury Type:" textFill="#00000087">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="59.0" layoutY="88.0" text="Name of Athlete:" textFill="#00000086">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Label>
+      <TextField fx:id="injuryformTextArea" alignment="TOP_LEFT" layoutX="459.0" layoutY="136.0" prefHeight="94.0" prefWidth="211.0" promptText="Additional notes..." />
+      <TextField fx:id="injurySeverityTextField" layoutX="165.0" layoutY="132.0" promptText="e.g. Moderate" />
+      <TextField fx:id="injuryTypeTextField" layoutX="490.0" layoutY="84.0" promptText="e.g. Sprain" />
+      <Button layoutX="646.0" layoutY="539.0" mnemonicParsing="false" onAction="#ReturnHomeOnAction" text="Return Home" textFill="#b16aae">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Button>
+      <Button layoutX="343.0" layoutY="522.0" mnemonicParsing="false" onAction="#SubmitInjuryButton" prefHeight="31.0" prefWidth="150.0" text="Submit Assessment" textFill="#b16aae">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Button>
+      <Label fx:id="OutputLabel" layoutX="289.0" layoutY="411.0" prefHeight="52.0" prefWidth="221.0" />
+      <TableView fx:id="listviewPhysio1" layoutX="32.0" layoutY="252.0" prefHeight="259.0" prefWidth="701.0">
+        <columns>
+          <TableColumn fx:id="nameCol1" prefWidth="200.0" text="Name" />
+          <TableColumn fx:id="injuryCol1" prefWidth="200.0" text="Injury type" />
+            <TableColumn fx:id="severityCol1" prefWidth="200.0" text="Severity" />
+            <TableColumn fx:id="remarksCol1" prefWidth="100.0" text="Remarks" />
+        </columns>
+      </TableView>
+      <TextField fx:id="nameTF" layoutX="165.0" layoutY="84.0" />
+   </children>
+</AnchorPane>

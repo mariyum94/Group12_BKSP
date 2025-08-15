@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="592.0" prefWidth="801.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.group12_bksp.Samayra.Physiotherapist5">
+   <children>
+      <Label layoutX="352.0" layoutY="169.0" text="Ending Date:" />
+      <Label layoutX="47.0" layoutY="169.0" text="Starting Date:" />
+      <Label layoutX="41.0" layoutY="124.0" text="Choose Athlete:" />
+      <Label layoutX="172.0" layoutY="20.0" text="Rehabilitation Report Generation" textFill="#8e608a">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="comboBoxPhy5" layoutX="138.0" layoutY="120.0" prefWidth="150.0" />
+      <Button layoutX="328.0" layoutY="522.0" mnemonicParsing="false" onAction="#downloadPdfButton" text="Download PDF" textFill="#c4a1c1">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Button>
+      <Button layoutX="301.0" layoutY="216.0" mnemonicParsing="false" onAction="#generateReportButton" text="Generate Report" textFill="#ab67ac">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
+      <DatePicker fx:id="endDatePicker5" layoutX="445.0" layoutY="165.0" />
+      <DatePicker fx:id="datePicker5" layoutX="126.0" layoutY="165.0" />
+      <PieChart fx:id="reportPieChart" layoutX="31.0" layoutY="290.0" prefHeight="204.0" prefWidth="295.0" style="-fx-background-color: #c4a1c1;" title="Report Pie Chart" />
+      <BarChart fx:id="reportBarChart" layoutX="410.0" layoutY="266.0" prefHeight="227.0" prefWidth="371.0" title="Report Bar Chart">
+        <xAxis>
+          <CategoryAxis side="BOTTOM" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis side="LEFT" />
+        </yAxis>
+      </BarChart>
+      <Button layoutX="651.0" layoutY="524.0" mnemonicParsing="false" onAction="#ReturnHomeOnAction" text="Return Home" textFill="#bc88b5">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font></Button>
+   </children>
+</AnchorPane>
