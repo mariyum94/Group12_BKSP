@@ -27,7 +27,7 @@ public class DirectorGeneral2
 
     @javafx.fxml.FXML
     public void ReturnHomeButton(ActionEvent actionEvent) throws IOException {
-        SceneSwitcher.switchTo("/com/example/group12_bksp/ROMTAHENA/CricketCoachDashboard.fxml", actionEvent);
+        SceneSwitcher.switchTo("/com/example/group12_bksp/ROMTAHENA/DirectorGdashboard.fxml", actionEvent);
     }
 
     @javafx.fxml.FXML
