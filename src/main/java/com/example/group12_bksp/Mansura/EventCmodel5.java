@@ -48,7 +48,6 @@ public class EventCmodel5 {
         this.eventVenue = eventVenue;
     }
 
-    // toString
     @Override
     public String toString() {
         return "EventCmodel5{" +

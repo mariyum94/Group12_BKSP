@@ -91,7 +91,6 @@ public class FinanceOfficer5
 
         if (selectedItem != null) {
             selectedItem.setStatus("Approved");
-
             // this one Update the table also refresh it
             equipmentTable.refresh();
         }}

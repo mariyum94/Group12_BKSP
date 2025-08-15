@@ -32,7 +32,7 @@ public class CTrainee2 {
 
     @FXML
     public void initialize() {
-        // Map table columns to model properties
+
         eventNameColumn.setCellValueFactory(new PropertyValueFactory<>("eventName"));
         eventDateColumn.setCellValueFactory(new PropertyValueFactory<>("eventDate"));
         eventLocationColumn.setCellValueFactory(new PropertyValueFactory<>("eventLocation"));

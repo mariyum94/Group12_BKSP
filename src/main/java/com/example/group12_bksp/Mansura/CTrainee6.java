@@ -66,10 +66,9 @@ public class CTrainee6 {
             return;
         }
 
-        // Add new session request
         sessionList.add(new CTraineemodel6(date, timeString, coach, notes));
 
-        // Clear input fields
+
         coachTextField.clear();
         notesTextArea.clear();
         morningRadio.setSelected(false);
