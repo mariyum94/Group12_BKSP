@@ -7,7 +7,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<fx:root prefHeight="400.0" prefWidth="708.0" type="AnchorPane" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.group12_bksp.Mansura.Createevent">
+<AnchorPane prefHeight="400.0" prefWidth="708.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.group12_bksp.Mansura.Createevent">
    <children>
       <TextField fx:id="VenueTextField" layoutX="164.0" layoutY="187.0" />
       <TextField fx:id="TimeTextField" layoutX="164.0" layoutY="237.0" />
@@ -27,4 +27,5 @@
       <TextField fx:id="NameTextField" layoutX="165.0" layoutY="123.0" />
       <Button layoutX="461.0" layoutY="314.0" mnemonicParsing="false" onAction="#addhandleonaction" prefHeight="26.0" prefWidth="175.0" text="Create" />
    </children>
-</fx:root>
+</AnchorPane>
+
