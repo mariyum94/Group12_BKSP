@@ -51,7 +51,7 @@ public class Createevent {
 
     @FXML
     public void goBack(ActionEvent actionEvent) throws IOException {
-        SceneSwitcher.switchTo("EventCdashboard.fxml", actionEvent);
+        SceneSwitcher.switchTo("/com/example/group12_bksp/Mansura/EventCdashbord.fxml", actionEvent);
     }
 
     @FXML
