@@ -1,38 +1,88 @@
 package com.example.group12_bksp.Mansura;
 
 import javafx.event.ActionEvent;
+import javafx.fxml.FXML;
 import javafx.scene.control.*;
+import javafx.scene.control.cell.PropertyValueFactory;
 
-public class CTrainee8
-{
-    @javafx.fxml.FXML
-    private TableColumn resultColumn;
-    @javafx.fxml.FXML
+import java.time.LocalDate;
+import java.util.ArrayList;
+
+public class CTrainee8 {
+
+    @FXML
     private TextField opponentTextField;
-    @javafx.fxml.FXML
-    private DatePicker matchDatePicker;
-    @javafx.fxml.FXML
-    private TableColumn opponentColumn;
-    @javafx.fxml.FXML
-    private TableColumn scoreColumn;
-    @javafx.fxml.FXML
-    private TableColumn summaryColumn;
-    @javafx.fxml.FXML
-    private TableColumn matchDateColumn;
-    @javafx.fxml.FXML
-    private TableView matchResultsTable;
-    @javafx.fxml.FXML
-    private TableColumn matchTypeColumn;
-    @javafx.fxml.FXML
-    private RadioButton awayRadio;
-    @javafx.fxml.FXML
+    @FXML
     private RadioButton homeRadio;
+    @FXML
+    private RadioButton awayRadio;
+    @FXML
+    private DatePicker matchDatePicker;
+    @FXML
+    private TableView<CTraineemodel8> matchResultsTable;
+    @FXML
+    private TableColumn<CTraineemodel8, LocalDate> matchDateColumn;
+    @FXML
+    private TableColumn<CTraineemodel8, String> opponentColumn;
+    @FXML
+    private TableColumn<CTraineemodel8, String> matchTypeColumn;
+    @FXML
+    private TableColumn<CTraineemodel8, String> resultColumn;
+    @FXML
+    private TableColumn<CTraineemodel8, String> scoreColumn;
+    @FXML
+    private TableColumn<CTraineemodel8, String> summaryColumn;
 
-    @javafx.fxml.FXML
+    // Use ArrayList instead of ObservableList
+    private ArrayList<CTraineemodel8> matchResultsList = new ArrayList<>();
+
+    @FXML
     public void initialize() {
+        matchDateColumn.setCellValueFactory(new PropertyValueFactory<>("matchDate"));
+        opponentColumn.setCellValueFactory(new PropertyValueFactory<>("opponent"));
+        matchTypeColumn.setCellValueFactory(new PropertyValueFactory<>("matchType"));
+        resultColumn.setCellValueFactory(new PropertyValueFactory<>("result"));
+        scoreColumn.setCellValueFactory(new PropertyValueFactory<>("score"));
+        summaryColumn.setCellValueFactory(new PropertyValueFactory<>("summary"));
+
+        // Add example data
+        matchResultsList.add(new CTraineemodel8(LocalDate.of(2025, 8, 14), "Team A", "Home", "Win", "3-1", "Good performance"));
+        matchResultsList.add(new CTraineemodel8(LocalDate.of(2025, 8, 10), "Team B", "Away", "Lose", "0-2", "Poor defense"));
+
+        // Populate TableView from ArrayList
+        matchResultsTable.getItems().addAll(matchResultsList);
     }
 
-    @javafx.fxml.FXML
-    public void handleLoadResults(ActionEvent actionEvent) {
+    @FXML
+    public void loadResults(ActionEvent actionEvent) {
+        // Clear and reload TableView from ArrayList
+        matchResultsTable.getItems().clear();
+        matchResultsTable.getItems().addAll(matchResultsList);
+        matchResultsTable.refresh();
+    }
+
+    // Optional: add method to add new match result to ArrayList
+    @FXML
+    public void addMatchResult(ActionEvent actionEvent) {
+        if (matchDatePicker.getValue() != null && !opponentTextField.getText().isEmpty()) {
+            String matchType = homeRadio.isSelected() ? "Home" : "Away";
+            // Default placeholders for result, score, summary
+            CTraineemodel8 newMatch = new CTraineemodel8(
+                    matchDatePicker.getValue(),
+                    opponentTextField.getText(),
+                    matchType,
+                    "Pending",
+                    "-",
+                    "-"
+            );
+            matchResultsList.add(newMatch);
+            matchResultsTable.getItems().add(newMatch);
+
+            // Clear input fields
+            matchDatePicker.setValue(null);
+            opponentTextField.clear();
+            homeRadio.setSelected(false);
+            awayRadio.setSelected(false);
+        }
     }
 }
