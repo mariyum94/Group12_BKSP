@@ -75,12 +75,6 @@ public class FinanceOfficer1
     }
 
     @javafx.fxml.FXML
-    public void returnToDashboardButton(ActionEvent actionEvent) throws IOException {
-        SceneSwitcher.switchTo("/com/example/group12_bksp/Mariyum/FinanceOfficerDashboard.fxml", actionEvent);
-
-    }
-
-    @javafx.fxml.FXML
     public void addExpenseButton(ActionEvent actionEvent) {
         String amountText = amountField.getText();
         String category = categoryField.getText();
@@ -102,5 +96,11 @@ public class FinanceOfficer1
         categoryField.clear();
         budgetField.clear();
         datePicker.setValue(null);
+    }
+
+    @javafx.fxml.FXML
+    public void returnToDashboardButton(ActionEvent actionEvent) throws IOException {
+        SceneSwitcher.switchTo("/com/example/group12_bksp/Mariyum/FinanceOfficerDashboard.fxml", actionEvent);
+
     }
 }
