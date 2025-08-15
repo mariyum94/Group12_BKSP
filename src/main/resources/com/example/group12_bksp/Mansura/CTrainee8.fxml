@@ -1,45 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane xmlns:fx="http://javafx.com/fxml/1"
-            fx:controller="com.example.group12_bksp.Mansura.CTrainee8"
-            prefWidth="900.0" prefHeight="650.0">
+<AnchorPane prefHeight="650.0" prefWidth="900.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/23.0.1" fx:controller="com.example.group12_bksp.Mansura.CTrainee8">
 
     <!-- Title -->
-    <Label text="Match Results" layoutX="20.0" layoutY="20.0"
-           style="-fx-font-size: 24px; -fx-font-weight: bold;"/>
+    <Label layoutX="348.0" layoutY="14.0" style="-fx-font-size: 24px; -fx-font-weight: bold;" text="Match Results" />
 
     <!-- TextField for filtering by Opponent -->
-    <Label text="Opponent:" layoutX="20.0" layoutY="70.0"/>
-    <TextField fx:id="opponentTextField" layoutX="100.0" layoutY="65.0" prefWidth="200.0"/>
+    <Label layoutX="20.0" layoutY="70.0" text="Opponent:" />
+    <TextField fx:id="opponentTextField" layoutX="100.0" layoutY="65.0" prefWidth="200.0" />
 
     <!-- RadioButtons for Match Type -->
-    <Label text="Match Type:" layoutX="320.0" layoutY="70.0"/>
-    <RadioButton fx:id="homeRadio" text="Home" layoutX="400.0" layoutY="65.0"/>
-    <RadioButton fx:id="awayRadio" text="Away" layoutX="480.0" layoutY="65.0"/>
+    <Label layoutX="320.0" layoutY="70.0" text="Match Type:" />
+    <RadioButton fx:id="homeRadio" layoutX="400.0" layoutY="65.0" text="Home" />
+    <RadioButton fx:id="awayRadio" layoutX="480.0" layoutY="65.0" text="Away" />
 
     <!-- DatePicker for filtering by Date -->
-    <Label text="Match Date:" layoutX="580.0" layoutY="70.0"/>
-    <DatePicker fx:id="matchDatePicker" layoutX="670.0" layoutY="65.0"/>
+    <Label layoutX="580.0" layoutY="70.0" text="Match Date:" />
+    <DatePicker fx:id="matchDatePicker" layoutX="670.0" layoutY="65.0" />
 
     <!-- Button to load results -->
-    <Button text="View Match Results" layoutX="20.0" layoutY="110.0" prefWidth="180.0"
-            onAction="#handleLoadResults"/>
+    <Button layoutX="20.0" layoutY="110.0" onAction="#handleLoadResults" prefWidth="180.0" text="View Match Results" />
 
     <!-- TableView to display match results -->
-    <TableView fx:id="matchResultsTable" layoutX="20.0" layoutY="160.0"
-               prefWidth="860.0" prefHeight="470.0">
+    <TableView fx:id="matchResultsTable" layoutX="20.0" layoutY="160.0" prefHeight="470.0" prefWidth="860.0">
         <columns>
-            <TableColumn fx:id="matchDateColumn" text="Date" prefWidth="150.0"/>
-            <TableColumn fx:id="opponentColumn" text="Opponent" prefWidth="200.0"/>
-            <TableColumn fx:id="matchTypeColumn" text="Type" prefWidth="100.0"/>
-            <TableColumn fx:id="resultColumn" text="Result" prefWidth="150.0"/>
-            <TableColumn fx:id="scoreColumn" text="Score" prefWidth="200.0"/>
-            <TableColumn fx:id="summaryColumn" text="Summary" prefWidth="160.0"/>
+            <TableColumn fx:id="matchDateColumn" prefWidth="150.0" text="Date" />
+            <TableColumn fx:id="opponentColumn" prefWidth="200.0" text="Opponent" />
+            <TableColumn fx:id="matchTypeColumn" prefWidth="100.0" text="Type" />
+            <TableColumn fx:id="resultColumn" prefWidth="150.0" text="Result" />
+            <TableColumn fx:id="scoreColumn" prefWidth="200.0" text="Score" />
+            <TableColumn fx:id="summaryColumn" prefWidth="160.0" text="Summary" />
         </columns>
     </TableView>
 
 </AnchorPane>
-

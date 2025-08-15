@@ -53,7 +53,7 @@ public class CTrainee8 {
         matchResultsTable.getItems().addAll(matchResultsList);
     }
 
-    @FXML
+    @Deprecated
     public void loadResults(ActionEvent actionEvent) {
         // Clear and reload TableView from ArrayList
         matchResultsTable.getItems().clear();
@@ -62,7 +62,7 @@ public class CTrainee8 {
     }
 
     // Optional: add method to add new match result to ArrayList
-    @FXML
+    @Deprecated
     public void addMatchResult(ActionEvent actionEvent) {
         if (matchDatePicker.getValue() != null && !opponentTextField.getText().isEmpty()) {
             String matchType = homeRadio.isSelected() ? "Home" : "Away";
@@ -84,5 +84,9 @@ public class CTrainee8 {
             homeRadio.setSelected(false);
             awayRadio.setSelected(false);
         }
+    }
+
+    @FXML
+    public void handleLoadResults(ActionEvent actionEvent) {
     }
 }
