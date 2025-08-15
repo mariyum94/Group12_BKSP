@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="464.0" prefWidth="688.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.group12_bksp.Samayra.Physiotherapist7">
+   <children>
+      <Label layoutX="247.0" layoutY="353.0" prefHeight="62.0" prefWidth="245.0" textFill="#996797" />
+      <Label layoutX="43.0" layoutY="99.0" text="Write Your Message:" />
+      <Label layoutX="217.0" layoutY="24.0" text="Message Medical Team" textFill="#a4709f">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="messageTeamTextArea" layoutX="179.0" layoutY="108.0" prefHeight="150.0" prefWidth="381.0" />
+      <Button layoutX="333.0" layoutY="294.0" mnemonicParsing="false" onAction="#sendMessageButton" text="Send" textFill="#996099">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></Button>
+      <Button layoutX="540.0" layoutY="370.0" mnemonicParsing="false" onAction="#ReturnHomeOnAction" text="Return Home" textFill="#a675a9">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font></Button>
+   </children>
+</AnchorPane>

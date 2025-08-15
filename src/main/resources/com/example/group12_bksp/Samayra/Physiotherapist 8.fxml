@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="537.0" prefWidth="858.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.group12_bksp.Samayra.Physiotherapist8">
+   <children>
+      <Label layoutX="53.0" layoutY="396.0" text="Recovery Status" />
+      <Label layoutX="481.0" layoutY="396.0" text="Type:" />
+      <Label layoutX="482.0" layoutY="346.0" text="Date:" />
+      <Label layoutX="53.0" layoutY="346.0" text="Injury Name:" />
+      <Label layoutX="176.0" layoutY="30.0" text="Injury Database Management" textFill="#a4709f">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <TableView fx:id="InjuryDatabaseTV" layoutX="105.0" layoutY="86.0" prefHeight="200.0" prefWidth="641.0">
+        <columns>
+          <TableColumn prefWidth="160.0" text="Injury Name" />
+          <TableColumn prefWidth="160.0" text="Date" />
+            <TableColumn prefWidth="160.0" text="Type" />
+            <TableColumn prefWidth="160.0" text="Recovery Status" />
+        </columns>
+      </TableView>
+      <TextField fx:id="injuryDatabaseTypeTF" layoutX="535.0" layoutY="392.0" />
+      <TextField fx:id="recoveryStatusTF" layoutX="150.0" layoutY="392.0" />
+      <TextField fx:id="injuryNameTF8" layoutX="150.0" layoutY="346.0" />
+      <DatePicker fx:id="injuryDatabaseDatePicker" layoutX="535.0" layoutY="346.0" />
+      <Button layoutX="710.0" layoutY="485.0" mnemonicParsing="false" onAction="#ReturnHomeOnAction" text="Return Home" textFill="#915e8e">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Button>
+      <Button layoutX="345.0" layoutY="445.0" mnemonicParsing="false" onAction="#injuryDatabaseSaveChangesButton" text="Save Changes" textFill="#a067a1">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></Button>
+      <Label fx:id="outpuLabel8" layoutX="277.0" layoutY="482.0" prefHeight="46.0" prefWidth="260.0" />
+   </children>
+</AnchorPane>

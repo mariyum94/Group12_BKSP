@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="609.0" prefWidth="783.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.group12_bksp.Samayra.Physiotherapist3">
+   <children>
+      <Label fx:id="outputLabelPhy3" layoutX="108.0" layoutY="529.0" prefHeight="72.0" prefWidth="238.0" />
+      <Label layoutX="25.0" layoutY="214.0" prefHeight="30.0" prefWidth="89.0" text="Recovery data:">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font></Label>
+      <Label layoutX="33.0" layoutY="92.0" prefHeight="26.0" prefWidth="117.0" text="Select Athlete Name:">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font></Label>
+      <Label layoutX="204.0" layoutY="14.0" text="Recovery Progress Monitoring" textFill="#a4709f">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="comboBoxPhy3" layoutX="180.0" layoutY="93.0" prefWidth="150.0" />
+      <Button layoutX="619.0" layoutY="551.0" mnemonicParsing="false" onAction="#ReturnHomeOnAction" text="Return Home">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font></Button>
+      <Button layoutX="381.0" layoutY="539.0" mnemonicParsing="false" onAction="#recoveryUpdateButton" text="Update Changes">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
+      <TableView fx:id="recoveryTableView3" layoutX="81.0" layoutY="244.0" prefHeight="270.0" prefWidth="599.0">
+        <columns>
+          <TableColumn prefWidth="200.0" text="Previous Injury Data" />
+          <TableColumn prefWidth="200.0" text="New Recovery Score" />
+            <TableColumn prefWidth="200.0" text="Notes" />
+        </columns>
+      </TableView>
+      <Label layoutX="512.0" layoutY="139.0" text="Notes">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="402.0" layoutY="96.0" text="New Recovery Score:">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <TextField fx:id="RecoveryTextField" layoutX="559.0" layoutY="93.0" />
+      <TextArea fx:id="recoveryTextArea" layoutX="559.0" layoutY="139.0" prefHeight="90.0" prefWidth="200.0" />
+   </children>
+</AnchorPane>
