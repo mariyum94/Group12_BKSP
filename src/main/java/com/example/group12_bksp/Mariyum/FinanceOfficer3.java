@@ -88,11 +88,6 @@ public class FinanceOfficer3 {
             messageLabel.setText(e.getMessage());
         }}
 
-    @javafx.fxml.FXML
-    public void returnToDashboardButton(ActionEvent actionEvent) throws IOException {
-        SceneSwitcher.switchTo("/com/example/group12_bksp/Mariyum/FinanceOfficerDashboard.fxml", actionEvent);
-
-    }
 
     @javafx.fxml.FXML
     public void filterButton(ActionEvent actionEvent) {
@@ -110,9 +105,12 @@ public class FinanceOfficer3 {
         logTableview.getItems().add(newEntry);
 
         messageLabel.setText("New entry added.");
-
-        // Clear inputs
         AmountField.clear();
         categoryField.clear();
     }
+
+@javafx.fxml.FXML
+public void returnToDashboardButton(ActionEvent actionEvent) throws IOException {
+    SceneSwitcher.switchTo("/com/example/group12_bksp/Mariyum/FinanceOfficerDashboard.fxml", actionEvent);
+}
 }
