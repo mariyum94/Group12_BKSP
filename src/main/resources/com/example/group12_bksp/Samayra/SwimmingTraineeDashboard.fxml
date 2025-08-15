@@ -5,7 +5,6 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.group12_bksp.Samayra.SwimmingTraineeDashboardController">
    <children>
       <Label layoutX="111.0" layoutY="29.0" text="Swimming Trainee Dashboard" textFill="#b177ac">
@@ -23,7 +22,7 @@
             <Font name="System Bold" size="12.0" />
          </font>
       </Button>
-      <Button layoutX="331.0" layoutY="231.0" mnemonicParsing="false" onAction="#TreadWaterButtonOnAction" prefHeight="26.0" prefWidth="132.0" text="Tread Water" textFill="#b177ac">
+      <Button layoutX="331.0" layoutY="231.0" mnemonicParsing="false" onAction="#TreadWaterButtonOnAction" prefHeight="26.0" prefWidth="158.0" text="5 Min Tread Water Test" textFill="#b177ac">
          <font>
             <Font name="System Bold" size="12.0" />
          </font>
@@ -33,7 +32,7 @@
             <Font name="System Bold" size="12.0" />
          </font>
       </Button>
-      <Button layoutX="331.0" layoutY="99.0" mnemonicParsing="false" onAction="#ButterflyStrokeButtonOnAction" prefHeight="26.0" prefWidth="122.0" text="Butterfly Stroke" textFill="#b177ac">
+      <Button layoutX="331.0" layoutY="99.0" mnemonicParsing="false" onAction="#ButterflyStrokeButtonOnAction" prefHeight="26.0" prefWidth="176.0" text="Butterfly Stroke  checkpoint" textFill="#b177ac">
          <font>
             <Font name="System Bold" size="12.0" />
          </font>
@@ -43,7 +42,7 @@
             <Font name="System Bold" size="12.0" />
          </font>
       </Button>
-      <Button layoutX="50.0" layoutY="231.0" mnemonicParsing="false" onAction="#BackstrokeBasicsButtonOnAction" prefHeight="26.0" prefWidth="138.0" text="Backstroke Basics" textFill="#b177ac">
+      <Button layoutX="50.0" layoutY="231.0" mnemonicParsing="false" onAction="#BackstrokeBasicsButtonOnAction" prefHeight="26.0" prefWidth="138.0" text="Backstroke Feedback" textFill="#b177ac">
          <font>
             <Font name="System Bold" size="12.0" />
          </font>
