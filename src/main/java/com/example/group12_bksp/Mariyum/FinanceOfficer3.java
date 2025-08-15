@@ -110,8 +110,6 @@ public class FinanceOfficer3 {
         logTableview.getItems().add(newEntry);
 
         messageLabel.setText("New entry added.");
-
-        // Clear inputs
         AmountField.clear();
         categoryField.clear();
     }
