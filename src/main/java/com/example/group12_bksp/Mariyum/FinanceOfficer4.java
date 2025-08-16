@@ -23,7 +23,6 @@ public class FinanceOfficer4 {
     @FXML
     private PieChart financePieChart;
 
-
     @FXML
     public void initialize() {
         filterComboBox.getItems().addAll("January", "February", "March", // Months
