@@ -1,10 +1,10 @@
 package com.example.group12_bksp.Samayra;
 
 import javafx.event.ActionEvent;
-import javafx.scene.control.ComboBox;
-import javafx.scene.control.Label;
-import javafx.scene.control.TableView;
-import javafx.scene.control.TextField;
+import javafx.scene.control.*;
+import javafx.scene.control.cell.PropertyValueFactory;
+
+import java.util.ArrayList;
 
 public class Physiotherapist4
 {
@@ -23,8 +23,25 @@ public class Physiotherapist4
     @javafx.fxml.FXML
     private TableView exerciseTV;
 
+    static ArrayList<PhysiotherapistModelClass1> PhysiotherapistModelClassList = new ArrayList<>();
+    @javafx.fxml.FXML
+    private TableColumn setsCol;
+    @javafx.fxml.FXML
+    private TableColumn repsCol;
+    @javafx.fxml.FXML
+    private TableColumn durationCol;
+    @javafx.fxml.FXML
+    private TableColumn exerciseCol;
+
     @javafx.fxml.FXML
     public void initialize() {
+        comboBoxPhy4.getItems().addAll("Karim", "Arik", "Isha");
+        exerciseCol.setCellValueFactory(new PropertyValueFactory<>("exercise"));
+        repsCol.setCellValueFactory(new PropertyValueFactory<>("repetition"));
+        setsCol.setCellValueFactory(new PropertyValueFactory<>("sets"));
+        durationCol.setCellValueFactory(new PropertyValueFactory<>("duration"));
+
+        exerciseTV.getItems().addAll(PhysiotherapistModelClassList);
     }
 
     @javafx.fxml.FXML

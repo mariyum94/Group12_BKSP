@@ -37,10 +37,10 @@
       <TextField fx:id="exerciseTF" layoutX="136.0" layoutY="112.0" />
       <TableView fx:id="exerciseTV" layoutX="110.0" layoutY="207.0" prefHeight="200.0" prefWidth="448.0">
         <columns>
-          <TableColumn prefWidth="150.0" text="Exercise" />
-          <TableColumn prefWidth="100.0" text="Reps" />
-            <TableColumn prefWidth="100.0" text="Sets" />
-            <TableColumn prefWidth="100.0" text="Duration" />
+          <TableColumn fx:id="exerciseCol" prefWidth="150.0" text="Exercise" />
+          <TableColumn fx:id="repsCol" prefWidth="100.0" text="Reps" />
+            <TableColumn fx:id="setsCol" prefWidth="100.0" text="Sets" />
+            <TableColumn fx:id="durationCol" prefWidth="100.0" text="Duration" />
         </columns>
       </TableView>
    </children>
