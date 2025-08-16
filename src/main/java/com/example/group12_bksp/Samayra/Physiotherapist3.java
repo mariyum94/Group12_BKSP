@@ -67,6 +67,7 @@ public class Physiotherapist3
         RecoveryTextField.clear();
         recoveryTextArea.clear();
         prevInjuryTF.clear();
+        athleteComboBox3.getSelectionModel().clearSelection();
     }
 
     @javafx.fxml.FXML
