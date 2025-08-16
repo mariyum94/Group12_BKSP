@@ -50,6 +50,6 @@ public class EventC4 {
 
     @FXML
     public void backToDashboard(ActionEvent actionEvent) throws IOException {
-        SceneSwitcher.switchTo("/com/example/group12_bksp/Mansura/Dashboard.fxml", actionEvent);
+        SceneSwitcher.switchTo("/com/example/group12_bksp/Mansura/EventCdashboard.fxml", actionEvent);
     }
 }

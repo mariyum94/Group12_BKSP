@@ -22,7 +22,7 @@
       <Label layoutX="44.0" layoutY="68.0" text="Choose Athlete:" />
       <ComboBox fx:id="comboBoxPhy4" layoutX="136.0" layoutY="64.0" prefWidth="150.0" />
       <TextField fx:id="repsTF" layoutX="448.0" layoutY="64.0" />
-      <Button layoutX="546.0" layoutY="474.0" mnemonicParsing="false" text="Return Home" textFill="#a4709f">
+      <Button fx:id="ReturnHomeOnAction" layoutX="546.0" layoutY="474.0" mnemonicParsing="false" onAction="#ReturnHomeOnAction" text="Return Home" textFill="#a4709f">
          <font>
             <Font name="System Bold" size="13.0" />
          </font></Button>
