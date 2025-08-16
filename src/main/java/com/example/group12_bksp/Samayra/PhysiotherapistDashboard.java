@@ -37,6 +37,7 @@ public class PhysiotherapistDashboard
 
     @javafx.fxml.FXML
     public void LogOutOnActionButton(ActionEvent actionEvent) throws IOException {
+        SceneSwitcher.switchTo("/com/example/group12_bksp/Login.fxml", actionEvent);
     }
 
     @javafx.fxml.FXML
