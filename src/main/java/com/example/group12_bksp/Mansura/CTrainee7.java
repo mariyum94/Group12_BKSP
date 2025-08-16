@@ -8,6 +8,8 @@ import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
 
+import java.util.ArrayList;
+
 public class CTrainee7 {
 
     @FXML
@@ -25,6 +27,9 @@ public class CTrainee7 {
     @FXML
     private TableColumn<CTraineemodel7, String> positionColumn;
 
+    // ArrayList to store team members
+    static ArrayList<CTraineemodel7> teamList = new ArrayList<>();
+
     @FXML
     public void initialize() {
         // Column bindings using PropertyValueFactory
@@ -32,16 +37,24 @@ public class CTrainee7 {
         roleColumn.setCellValueFactory(new PropertyValueFactory<>("role"));
         jerseyColumn.setCellValueFactory(new PropertyValueFactory<>("jerseyNumber"));
         positionColumn.setCellValueFactory(new PropertyValueFactory<>("position"));
+
+        // Load existing data from ArrayList if any
+        ObservableList<CTraineemodel7> observableTeam = FXCollections.observableArrayList(teamList);
+        teamTable.setItems(observableTeam);
     }
 
     @FXML
     public void handleLoadTeam(ActionEvent event) {
-        // Use the model class CTraineemodel7
-        ObservableList<CTraineemodel7> teamMembers = FXCollections.observableArrayList(
-                new CTraineemodel7("Alice", "Captain", 10, "Forward"),
-                new CTraineemodel7("Bob", "Player", 7, "Midfielder"),
-                new CTraineemodel7("Charlie", "Player", 5, "Defender")
-        );
+        // Clear previous data
+        teamList.clear();
+
+        // Add team members to ArrayList
+        teamList.add(new CTraineemodel7("Alice", "Captain", 10, "Forward"));
+        teamList.add(new CTraineemodel7("Bob", "Player", 7, "Midfielder"));
+        teamList.add(new CTraineemodel7("Charlie", "Player", 5, "Defender"));
+
+        // Update TableView
+        ObservableList<CTraineemodel7> teamMembers = FXCollections.observableArrayList(teamList);
         teamTable.setItems(teamMembers);
     }
 }

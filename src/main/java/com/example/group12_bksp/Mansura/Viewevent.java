@@ -50,16 +50,7 @@ public class Viewevent {
     public void onBack(ActionEvent actionEvent) throws IOException {
         SceneSwitcher.switchTo("/com/example/group12_bksp/Mansura/EventCdashboard.fxml", actionEvent);
     }
-
-    // Method to add events to ArrayList (optional)
-    public static void addEvent(EventCmodel5 event) {
-        eventList.add(event);
-    }
-
-    // Method to get events (optional)
-    public static ArrayList<EventCmodel5> getEventList() {
-        return eventList;
-    }
 }
+
 
 
