@@ -46,9 +46,9 @@ public class Physiotherapist3
     @javafx.fxml.FXML
     public void recoveryUpdateButton(ActionEvent actionEvent) {
         String athlete3= athleteComboBox3.getValue();
-        String prevInjury = prevInjuryCol.getText();
-        String score3 = newRecoveryCol.getText();
-        String notes3 = notesCol.getText();
+        String prevInjury = prevInjuryTF.getText();
+        String score3 = RecoveryTextField.getText();
+        String notes3 = recoveryTextArea.getText();
 
         if (athlete3.isEmpty() || prevInjury.isEmpty() || notes3.isEmpty() || athlete3==null) {
             outputLabelPhy3.setText("Please enter all the information");
