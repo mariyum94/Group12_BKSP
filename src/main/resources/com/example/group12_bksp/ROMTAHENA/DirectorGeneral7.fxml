@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="602.0" prefWidth="871.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.group12_bksp.ROMTAHENA.DirectorGeneral7">
+    <Label layoutX="334.0" layoutY="20.0" prefHeight="26.0" prefWidth="190.0" style="-fx-font-size:20px; -fx-font-weight:bold;" text="Evaluate  Performance" textFill="#519c56">
+      <font>
+         <Font name="System Bold" size="23.0" />
+      </font></Label>
+
+    <Label layoutX="40.0" layoutY="80.0" text="Department:" />
+    <ComboBox fx:id="departmentComboBox" layoutX="150.0" layoutY="75.0" prefWidth="250.0" promptText="Select department..." />
+
+    <Label layoutX="40.0" layoutY="120.0" text="Date:" />
+    <DatePicker fx:id="evaluationDatePicker" layoutX="150.0" layoutY="115.0" prefWidth="200.0" />
+
+    <Label layoutX="40.0" layoutY="160.0" text="Remarks:" />
+    <TextArea fx:id="remarksArea" layoutX="150.0" layoutY="155.0" prefHeight="60.0" prefWidth="400.0" wrapText="true" />
+
+    <Button layoutX="38.0" layoutY="550.0" onAction="#AddEvaluationButton" prefWidth="140.0" text="Add Evaluation" textFill="#519c56">
+      <font>
+         <Font name="System Bold" size="14.0" />
+      </font></Button>
+
+    <Button layoutX="205.0" layoutY="550.0" onAction="#UpdateEvaluationButton" prefWidth="140.0" text="Update" textFill="#519c56">
+      <font>
+         <Font name="System Bold" size="14.0" />
+      </font></Button>
+
+    <TableView fx:id="performanceTable" layoutX="40.0" layoutY="240.0" prefHeight="300.0" prefWidth="820.0">
+        <columns>
+            <TableColumn fx:id="colMetric" prefWidth="200.0" text="Metric" />
+            <TableColumn fx:id="colValue" prefWidth="150.0" text="Value" />
+            <TableColumn fx:id="colDate" prefWidth="150.0" text="Date" />
+            <TableColumn fx:id="colRemarks" prefWidth="320.0" text="Remarks" />
+        </columns>
+    </TableView>
+
+    <Button layoutX="740.0" layoutY="550.0" onAction="#ReturnHomeButton" prefWidth="120.0" text="Return Home" textFill="#519c56">
+      <font>
+         <Font name="System Bold" size="14.0" />
+      </font></Button>
+
+</AnchorPane>
