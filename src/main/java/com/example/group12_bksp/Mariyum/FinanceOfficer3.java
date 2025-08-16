@@ -31,7 +31,7 @@ public class FinanceOfficer3 {
     @javafx.fxml.FXML
     private Label messageLabel;
 
-    private static final String dataFileName = "FinanceOfficer3/Mariyum.bin";
+    private static final String dataFileName = "FinanceOfficer3.bin";
 
 
     static List<FinanceOfficerModelClass1> getFinanceOfficerModelClass1List() {

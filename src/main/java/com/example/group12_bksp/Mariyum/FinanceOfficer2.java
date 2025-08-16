@@ -36,11 +36,6 @@ public class FinanceOfficer2
 
         salaryTable.getItems().addAll(FinanceOfficerModelClass2list);}
 
-    @javafx.fxml.FXML
-    public void returnToDashboardButton(ActionEvent actionEvent) throws IOException {
-        SceneSwitcher.switchTo("/com/example/group12_bksp/Mariyum/FinanceOfficerDashboard.fxml", actionEvent);
-
-    }
 
     @javafx.fxml.FXML
     public void paySalaryButton(ActionEvent actionEvent) {
@@ -60,6 +55,12 @@ public class FinanceOfficer2
         reportLabel.setText("Paid salary to " + name);
         employenameField.clear();
         SalaryField.clear();
+
+    }
+
+    @javafx.fxml.FXML
+    public void returnToDashboardButton(ActionEvent actionEvent) throws IOException {
+        SceneSwitcher.switchTo("/com/example/group12_bksp/Mariyum/FinanceOfficerDashboard.fxml", actionEvent);
 
     }
 }
