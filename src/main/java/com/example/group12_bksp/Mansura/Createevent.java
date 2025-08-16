@@ -3,41 +3,43 @@ package com.example.group12_bksp.Mansura;
 import com.example.group12_bksp.SceneSwitcher;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.scene.control.DatePicker;
-import javafx.scene.control.Label;
-import javafx.scene.control.TextField;
+import javafx.scene.control.*;
 
 import java.io.IOException;
 import java.time.LocalDate;
+import java.util.ArrayList;
+import java.util.List;
 
 public class Createevent {
 
     @FXML
-    private Label statuslabel;
+    private TextField NameTextField;
 
     @FXML
-    private TextField eventNameField;
+    private TextField TimeTextField;
 
     @FXML
-    private TextField eventTimeField;
-
-    @FXML
-    private TextField venueField;
+    private TextField VenueTextField;
 
     @FXML
     private DatePicker eventDatePicker;
 
     @FXML
+    private Label statuslabel;
+
+    private List<EventCmodel5> eventsList = new ArrayList<>();
+
+    @FXML
     public void initialize() {
-        eventDatePicker.setValue(LocalDate.now()); // default date
-        statuslabel.setText(""); // clear status
+        eventDatePicker.setValue(LocalDate.now());
+        statuslabel.setText("");
     }
 
     @FXML
-    public void handleCreateEvent(ActionEvent actionEvent) {
-        String name = eventNameField.getText();
-        String time = eventTimeField.getText();
-        String venue = venueField.getText();
+    private void addhandleonaction(ActionEvent actionEvent) {
+        String name = NameTextField.getText();
+        String time = TimeTextField.getText();
+        String venue = VenueTextField.getText();
         LocalDate date = eventDatePicker.getValue();
 
         if (name.isEmpty() || time.isEmpty() || venue.isEmpty() || date == null) {
@@ -45,18 +47,21 @@ public class Createevent {
             return;
         }
 
-        // Saving logic to DB or file
+        EventCmodel5 newEvent = new EventCmodel5(name, date.toString(), time, venue);
+        eventsList.add(newEvent);
+
         statuslabel.setText("Event created successfully!");
+
+        // Clear fields
+        NameTextField.clear();
+        TimeTextField.clear();
+        VenueTextField.clear();
+        eventDatePicker.setValue(LocalDate.now());
     }
 
     @FXML
-    public void goBack(ActionEvent actionEvent) throws IOException {
-        SceneSwitcher.switchTo("/com/example/group12_bksp/Mansura/EventCdashbord.fxml", actionEvent);
-    }
-
-    @FXML
-    public void logOut(ActionEvent actionEvent) throws IOException {
-        SceneSwitcher.switchTo("login.fxml", actionEvent);
+    private void onBack(ActionEvent actionEvent) throws IOException {
+        SceneSwitcher.switchTo("EventCdashboard.fxml", actionEvent);
     }
 }
 

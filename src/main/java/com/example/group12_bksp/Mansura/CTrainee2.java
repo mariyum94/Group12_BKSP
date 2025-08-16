@@ -7,8 +7,8 @@ import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
 
-import java.io.IOException;
 import java.time.LocalDate;
+import java.util.ArrayList;
 
 public class CTrainee2 {
 
@@ -17,47 +17,56 @@ public class CTrainee2 {
 
     @FXML
     private TableColumn<CTraineemodel2, String> eventNameColumn;
-
     @FXML
     private TableColumn<CTraineemodel2, LocalDate> eventDateColumn;
-
     @FXML
     private TableColumn<CTraineemodel2, String> eventLocationColumn;
-
     @FXML
     private TableColumn<CTraineemodel2, String> eventStatusColumn;
 
     @FXML
     private Label statusLabel;
 
+    // Static ArrayList to store events
+    static ArrayList<CTraineemodel2> CTraineemodel2list = new ArrayList<>();
+
     @FXML
     public void initialize() {
-
+        // Map columns to model properties
         eventNameColumn.setCellValueFactory(new PropertyValueFactory<>("eventName"));
         eventDateColumn.setCellValueFactory(new PropertyValueFactory<>("eventDate"));
         eventLocationColumn.setCellValueFactory(new PropertyValueFactory<>("eventLocation"));
         eventStatusColumn.setCellValueFactory(new PropertyValueFactory<>("eventStatus"));
 
-        // Sample data
-        eventsTable.getItems().addAll(
-                new CTraineemodel2("Yoga Workshop", LocalDate.of(2025, 8, 20), "Room 1", "Open"),
-                new CTraineemodel2("Strength Training", LocalDate.of(2025, 8, 21), "Gym Hall", "Full"),
-                new CTraineemodel2("Cardio Challenge", LocalDate.of(2025, 8, 22), "Outdoor Field", "Open")
-        );
-
-        statusLabel.setText(""); // Clear status label on load
+        // Load existing events from ArrayList
+        eventsTable.getItems().addAll(CTraineemodel2list);
     }
 
     @FXML
-    private void handleLoadEvents(ActionEvent event) throws IOException {
-        System.out.println("Load Events button clicked");
-        // You can add logic to reload events from a file or database
+    private void handleLoadEvents(ActionEvent event) {
+        // Sample events if list is empty
+        if (CTraineemodel2list.isEmpty()) {
+            CTraineemodel2list.add(new CTraineemodel2("Music Festival", LocalDate.of(2025, 8, 25), "Auditorium", "Open"));
+            CTraineemodel2list.add(new CTraineemodel2("Workshop on AI", LocalDate.of(2025, 8, 28), "Lab 3", "Open"));
+            CTraineemodel2list.add(new CTraineemodel2("Sports Day", LocalDate.of(2025, 9, 2), "Playground", "Closed"));
+        }
+
+        // Refresh TableView
+        eventsTable.getItems().setAll(CTraineemodel2list);
+        statusLabel.setText("Events loaded successfully.");
     }
 
     @FXML
-    private void handleRegisterEvent(ActionEvent event) throws IOException {
-        System.out.println("Register Event button clicked");
-        // You can add logic to register selected event
+    private void handleRegisterEvent(ActionEvent event) {
+        CTraineemodel2 selectedEvent = eventsTable.getSelectionModel().getSelectedItem();
+        if (selectedEvent == null) {
+            statusLabel.setText("Please select an event to register.");
+            return;
+        }
+
+        // Demo registration logic
+        statusLabel.setText("Registered for: " + selectedEvent.getEventName());
     }
 }
+
 

@@ -7,23 +7,26 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
 <AnchorPane prefHeight="602.0" prefWidth="771.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.group12_bksp.Mansura.Viewevent">
-   <children>
-      <Label layoutX="283.0" layoutY="48.0" prefHeight="40.0" prefWidth="180.0" text="MY EVENTS">
-         <font>
-            <Font size="29.0" />
-         </font>
-      </Label>
-      <TableView fx:id="eventtable" layoutX="36.0" layoutY="156.0" prefHeight="200.0" prefWidth="660.0">
-        <columns>
-          <TableColumn fx:id="colEventName" prefWidth="172.00000762939453" text="eventname" />
-          <TableColumn fx:id="colEventDate" prefWidth="146.39996337890625" text="eventdate" />
-            <TableColumn fx:id="colEventTime" prefWidth="126.4000244140625" text="eventtime" />
-            <TableColumn fx:id="colVenue" prefWidth="216.79995727539062" text="eventvenue" />
-        </columns>
-      </TableView>
-      <Button layoutX="314.0" layoutY="423.0" mnemonicParsing="false" onAction="#onRefreshEvents" prefHeight="26.0" prefWidth="214.0" text="REFRESH" />
-      <Button layoutX="314.0" layoutY="493.0" mnemonicParsing="false" onAction="#onBack" prefHeight="26.0" prefWidth="224.0" text="BACK" />
-   </children>
+
+    <children>
+        <Label layoutX="283.0" layoutY="48.0" prefHeight="40.0" prefWidth="180.0" text="MY EVENTS">
+            <font>
+                <Font size="29.0" />
+            </font>
+        </Label>
+
+        <TableView fx:id="eventTable" layoutX="36.0" layoutY="156.0" prefHeight="200.0" prefWidth="660.0">
+            <columns>
+                <TableColumn fx:id="coleventname" prefWidth="172.0" text="eventname" />
+                <TableColumn fx:id="coleventdate" prefWidth="146.4" text="eventdate" />
+                <TableColumn fx:id="coleventtime" prefWidth="126.4" text="eventtime" />
+                <TableColumn fx:id="colvenue" prefWidth="216.8" text="eventvenue" />
+            </columns>
+        </TableView>
+
+        <Button layoutX="314.0" layoutY="423.0" mnemonicParsing="false" onAction="#onRefreshEvents" prefHeight="26.0" prefWidth="214.0" text="REFRESH" />
+
+        <Button layoutX="314.0" layoutY="493.0" mnemonicParsing="false" onAction="#onBack" prefHeight="26.0" prefWidth="224.0" text="BACK" />
+    </children>
 </AnchorPane>

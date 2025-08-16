@@ -17,7 +17,7 @@
          <font>
             <Font name="System Bold Italic" size="12.0" />
          </font></Label>
-      <Label layoutX="33.0" layoutY="92.0" prefHeight="26.0" prefWidth="117.0" text="Select Athlete Name:">
+      <Label layoutX="35.0" layoutY="158.0" prefHeight="26.0" prefWidth="117.0" text="Previous injury data:">
          <font>
             <Font name="System Bold Italic" size="12.0" />
          </font></Label>
@@ -26,7 +26,6 @@
             <Font name="System Bold" size="20.0" />
          </font>
       </Label>
-      <ComboBox fx:id="comboBoxPhy3" layoutX="180.0" layoutY="93.0" prefWidth="150.0" />
       <Button layoutX="619.0" layoutY="551.0" mnemonicParsing="false" onAction="#ReturnHomeOnAction" text="Return Home">
          <font>
             <Font name="System Bold" size="13.0" />
@@ -37,9 +36,9 @@
          </font></Button>
       <TableView fx:id="recoveryTableView3" layoutX="81.0" layoutY="244.0" prefHeight="270.0" prefWidth="599.0">
         <columns>
-          <TableColumn prefWidth="200.0" text="Previous Injury Data" />
-          <TableColumn prefWidth="200.0" text="New Recovery Score" />
-            <TableColumn prefWidth="200.0" text="Notes" />
+          <TableColumn fx:id="prevInjuryCol" prefWidth="200.0" text="Previous Injury Data" />
+          <TableColumn fx:id="newRecoveryCol" prefWidth="200.0" text="New Recovery Score" />
+            <TableColumn fx:id="notesCol" prefWidth="200.0" text="Notes" />
         </columns>
       </TableView>
       <Label layoutX="512.0" layoutY="139.0" text="Notes">
@@ -54,5 +53,12 @@
       </Label>
       <TextField fx:id="RecoveryTextField" layoutX="559.0" layoutY="93.0" />
       <TextArea fx:id="recoveryTextArea" layoutX="559.0" layoutY="139.0" prefHeight="90.0" prefWidth="200.0" />
+      <TextField fx:id="prevInjuryTF" layoutX="164.0" layoutY="158.0" />
+      <ComboBox fx:id="athleteComboBox3" layoutX="163.0" layoutY="102.0" prefWidth="150.0" />
+      <Label layoutX="35.0" layoutY="105.0" prefHeight="26.0" prefWidth="117.0" text="Select athltete">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Label>
    </children>
 </AnchorPane>
