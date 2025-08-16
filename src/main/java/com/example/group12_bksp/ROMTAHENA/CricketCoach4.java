@@ -6,6 +6,8 @@ import javafx.event.ActionEvent;
 import javafx.scene.control.*;
 
 import java.io.IOException;
+import java.time.LocalDate;
+import java.util.ArrayList;
 
 import static javafx.collections.FXCollections.observableArrayList;
 
@@ -28,47 +30,38 @@ public class CricketCoach4
     private TableView<CricketCoachModelClass4> drillTable;
 
 
-    private ObservableList<CricketCoachModelClass4> drillList;
+    static ArrayList<CricketCoachModelClass4> CricketCoachModelClass4list= new ArrayList<>();
 
     @javafx.fxml.FXML
     public void initialize() {
         drillTypeComboBox.getItems().addAll("Batting", "Bowling", "Fielding");
-        drillTypeComboBox.setPromptText("Select Drill Type");
-
-        drillList = observableArrayList();
-        drillTable.setItems(drillList);
     }
 
     @javafx.fxml.FXML
     public void AddDrillButton(ActionEvent actionEvent) {
-        String name = drillNameField.getText();
-        String type = drillTypeComboBox.getValue();
-        String duration = durationField.getText();
+//        String drillName = drillNameField.getText();
+//        String duration = durationField.getText();
+//
+//        if (drillName.isEmpty() || durationField.isEmpty()) {
+//            msglabel.setText("Please fill in all fields including date.");
+//            return;
+//        }
+//
+//        drillName.clear();
+//        duration.setValue(null);
 
-        if (name.isEmpty() || type == null || duration.isEmpty()) {
-            Alert alert = new Alert(Alert.AlertType.WARNING);
-            alert.setContentText("Please fill all fields!");
-            alert.show();
-            return;
-        }
-
-        drillList.add(new CricketCoachModelClass4(name, type, duration));
-
-        drillNameField.clear();
-        drillTypeComboBox.setValue(null);
-        durationField.clear();
     }
 
     @javafx.fxml.FXML
     public void DeleteDrillButton(ActionEvent actionEvent) {
-        CricketCoachModelClass4 selected = drillTable.getSelectionModel().getSelectedItem();
-        if (selected != null) {
-            drillList.remove(selected);
-        } else {
-            Alert alert = new Alert(Alert.AlertType.WARNING);
-            alert.setContentText("Select a drill to delete!");
-            alert.show();
-        }
+//CricketCoachModelClass4 selected = expenseTable.getSelectionModel().getSelectedItem();
+//        if (selected != null) {
+//            CricketCoachModelClass41list.remove(selected);
+//            expenseTable.getItems().remove(selected);
+//            msglabel.setText("Record deleted.");
+//        } else {
+//            msglabel.setText("Please select a row to delete.");
+//        }
     }
 
     @javafx.fxml.FXML

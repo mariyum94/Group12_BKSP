@@ -6,6 +6,7 @@ import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
 
 import java.io.IOException;
+import java.util.ArrayList;
 
 public class CricketCoach3
 {
@@ -30,10 +31,13 @@ public class CricketCoach3
     @javafx.fxml.FXML
     private TableColumn<CricketCoachModelClass3, String> colBatBalls;
 
+    static ArrayList<CricketCoachModelClass3> CricketCoachModelClass3list= new ArrayList<>();
+    @javafx.fxml.FXML
+    private Label messageLabel;
+
     @javafx.fxml.FXML
     public void initialize() {
         playerComboBox.getItems().addAll("Player A", "Player B", "Player C");
-        playerComboBox.setPromptText("Select Player");
 
         colMatch.setCellValueFactory(new PropertyValueFactory<>("match"));
         colDate.setCellValueFactory(new PropertyValueFactory<>("date"));
@@ -53,10 +57,13 @@ public class CricketCoach3
 
     @javafx.fxml.FXML
     public void ExportButton(ActionEvent actionEvent) {
-        Alert alert = new Alert(Alert.AlertType.INFORMATION);
-        alert.setTitle("Export Stats");
-        alert.setHeaderText(null);
-        alert.setContentText("Player stats exported successfully!");
-        alert.showAndWait();
+        String player = playerComboBox.getValue();
+
+        if (player == null) {
+            messageLabel.setText("Please select a report type..");
+        } else {
+            messageLabel.setText("Unknown report type selected " );
+        }
+
     }
 }
