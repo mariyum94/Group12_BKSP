@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="556.0" prefWidth="866.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.group12_bksp.ROMTAHENA.DirectorGeneral8">
+
+    <Label layoutX="302.0" layoutY="20.0" prefHeight="26.0" prefWidth="243.0" style="-fx-font-size:20px; -fx-font-weight:bold;" text="Communicate with Coaches" textFill="#519c56">
+      <font>
+         <Font name="System Bold" size="14.0" />
+      </font></Label>
+
+    <Label layoutX="40.0" layoutY="80.0" text="Select Coach:" />
+    <ComboBox fx:id="coachComboBox" layoutX="125.0" layoutY="76.0" prefWidth="250.0" promptText="Choose coach..." />
+
+    <Label layoutX="40.0" layoutY="130.0" text="Message:" />
+    <TextArea fx:id="messageArea" layoutX="40.0" layoutY="155.0" prefHeight="120.0" prefWidth="338.0" wrapText="true" />
+
+    <Button layoutX="40.0" layoutY="290.0" onAction="#SendButton" prefWidth="100.0" text="Send" textFill="#519c56">
+      <font>
+         <Font name="System Bold" size="14.0" />
+      </font></Button>
+
+    <Button layoutX="150.0" layoutY="290.0" onAction="#DeleteButton" prefWidth="100.0" text="Delete" textFill="#519c56">
+      <font>
+         <Font name="System Bold" size="14.0" />
+      </font></Button>
+
+    <Label layoutX="430.0" layoutY="80.0" text="Message History:" />
+    <TableView fx:id="messageHistoryTable" layoutX="430.0" layoutY="105.0" prefHeight="400.0" prefWidth="400.0">
+        <columns>
+            <TableColumn fx:id="colCoach" prefWidth="120.0" text="Coach" />
+            <TableColumn fx:id="colDate" prefWidth="100.0" text="Date" />
+            <TableColumn fx:id="colMessage" prefWidth="200.0" text="Message" />
+        </columns>
+    </TableView>
+
+    <Button layoutX="710.0" layoutY="516.0" onAction="#ReturnHomeButton" prefWidth="120.0" text="Return Home" textFill="#519c56">
+      <font>
+         <Font name="System Bold" size="14.0" />
+      </font></Button>
+
+</AnchorPane>
