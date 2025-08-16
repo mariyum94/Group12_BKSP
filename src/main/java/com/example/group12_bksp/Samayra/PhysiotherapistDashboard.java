@@ -13,6 +13,7 @@ public class PhysiotherapistDashboard
 
     @javafx.fxml.FXML
     public void InjuryDatabaseOnActionButton(ActionEvent actionEvent) throws IOException {
+        SceneSwitcher.switchTo("/com/example/group12_bksp/Samayra/Physiotherapist8.fxml", actionEvent);
 
     }
 
@@ -29,10 +30,12 @@ public class PhysiotherapistDashboard
 
     @javafx.fxml.FXML
     public void MessageTeamOnActionButton(ActionEvent actionEvent) throws IOException{
+        SceneSwitcher.switchTo("/com/example/group12_bksp/Samayra/Physiotherapist7.fxml", actionEvent);
     }
 
     @javafx.fxml.FXML
     public void ScheduleFollowupOnActionButton(ActionEvent actionEvent) throws IOException {
+        SceneSwitcher.switchTo("/com/example/group12_bksp/Samayra/Physiotherapist6.fxml", actionEvent);
     }
 
     @javafx.fxml.FXML
@@ -52,5 +55,7 @@ public class PhysiotherapistDashboard
 
     @javafx.fxml.FXML
     public void RehabilitationReportOnActionButton(ActionEvent actionEvent) throws IOException {
+        SceneSwitcher.switchTo("/com/example/group12_bksp/Samayra/Physiotherapist5.fxml", actionEvent);
+
     }
 }
